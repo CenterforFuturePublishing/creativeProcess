@@ -1,0 +1,32 @@
+= creativeProcess
+
+Project for Digital Lyric 2020 Switzerland exhibition
+
+This project contain 3 modules:
+
+. [test](#webApp) client web based application (webApp)
+
+. client Adobe Illustrator plugin that can play external extendScript connecting with webSocket
+
+. main application, to make junction between webApp and Adobe Illustrator plugin
+
+This project need Node.js installed on your machine.
+Actually running on macOs Mojave [10.14] and Node v12.
+
+== dev
+
+=== webApp
+
+In terminal,
+
+. go to `client/` directory;
+
+. first used, install npm dependencies
+`npm install`
+
+. autre
+
+
+=== plugin
+
+=== server
