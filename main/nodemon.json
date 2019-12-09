@@ -1,0 +1,16 @@
+{
+  "ignore": [
+    ".git",
+    "node_modules/**/node_modules"
+  ],
+  "verbose": true,
+  "watch": [
+    "src/",
+    "../extendScriptApp/dist/main.txt"
+  ],
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "ext": "ts, js, json",
+  "exec": "npm run run"
+}
