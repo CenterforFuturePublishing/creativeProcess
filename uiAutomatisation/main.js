@@ -1,6 +1,7 @@
 const robotJS   = require("robotjs")
 const cp        = require("child_process")
 const fs        = require("fs")
+const { windowManager } = require("node-window-manager")
 
 const illustratorOpeningTime_millisecond = 10000
 
@@ -69,3 +70,39 @@ function printADocument() {
 }
 printADocument()
 
+// ===== test 1
+
+// windowManager.requestAccessibility();
+//
+// const window = windowManager.getActiveWindow();
+//
+// // Prints the currently focused window title.
+// console.log(window.getTitle());
+
+// =====
+
+// ===== test 2
+
+// const test = require("node-window-manager")
+//
+// console.log(test)
+//
+// /**@type {Array<Number>}*/
+// const listArrayOfWindowID = test.addon.getWindows()
+//
+// console.log(listArrayOfWindowID)
+//
+// for(const windowID of listArrayOfWindowID) {
+//     // console.log(test.addon.getWindowTitle(windowID))
+//
+//     const newWindow = new test.Window(windowID)
+//
+//     console.log(newWindow)
+// }
+//
+// const window = windowManager.getActiveWindow()
+//
+// // Prints the currently focused window bounds.
+// console.log(window.getBounds())
+//
+// console.log(window)
