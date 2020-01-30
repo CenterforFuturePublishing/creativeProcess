@@ -1,17 +1,60 @@
 const robotJS   = require("robotjs")
 const cp        = require("child_process")
+const fs        = require("fs")
+
+const illustratorOpeningTime_millisecond = 10000
+
+const defaultMouseDelay = 500
+
+const posePad = {
+    x: 0,
+    y: 60,
+}
+
+const mousePosition = {
+    illustrator: {
+        fichier: {
+            x: 160  - posePad.x,
+            y: 72   - posePad.y,
+        },
+        fichier__imprimer: {
+            x: 250 - posePad.x,
+            y: 570 - posePad.y,
+        }
+    }
+}
 
 const ILLUSTRATOR_APPLICATION_PATH = "/Applications/Adobe\\ Illustrator\\ 2020/Adobe\\ Illustrator.app"
 
-robotJS.setMouseDelay(1)
+let imageCaptureCounter = 0
+
+robotJS.setMouseDelay(defaultMouseDelay)
 
 cp.exec(`open ${ILLUSTRATOR_APPLICATION_PATH}`, (error, stdout, stderr) => {
     console.log(error)
     console.log(stdout)
     console.log(stderr)
 
-    robotJS.moveMouseSmooth(10, 10)
+    robotJS.setMouseDelay(illustratorOpeningTime_millisecond)
+
+    robotJS.moveMouseSmooth(mousePosition.illustrator.fichier.x, mousePosition.illustrator.fichier.y)
 
     robotJS.mouseClick()
+
+    robotJS.setMouseDelay(defaultMouseDelay)
+
+    robotJS.moveMouseSmooth(mousePosition.illustrator.fichier__imprimer.x, mousePosition.illustrator.fichier__imprimer.y)
+
+    robotJS.mouseClick()
+
+    const image = robotJS.screen.capture()
+
+    console.info("screenSize: ", image.width, " x ", image.height)
+
+    fs.writeFile(`screenCapture-${imageCaptureCounter}.png`, image.image, () => {
+
+    })
+
+    // robotJS.mouseClick()
 })
 
