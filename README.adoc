@@ -30,3 +30,9 @@ In terminal,
 === plugin
 
 === server
+
+=== iMac
+
+- ne pas avoir de sension pour démarer tout de suit dans une session
+
+- tiemveiwer lancer automatiquement
