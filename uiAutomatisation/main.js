@@ -32,36 +32,40 @@ const ILLUSTRATOR_APPLICATION_PATH = "/Applications/Adobe\\ Illustrator\\ 2020/A
 
 let imageCaptureCounter = 0
 
-robotJS.setMouseDelay(defaultMouseDelay)
-
-cp.exec(`open ${ILLUSTRATOR_APPLICATION_PATH}`, (error, stdout, stderr) => {
-    console.log(error)
-    console.log(stdout)
-    console.log(stderr)
-
-    robotJS.setMouseDelay(illustratorOpeningTime_millisecond)
-
-    robotJS.moveMouseSmooth(mousePosition.illustrator.fichier.x, mousePosition.illustrator.fichier.y)
+function printADocument() {
 
     robotJS.setMouseDelay(defaultMouseDelay)
 
-    robotJS.mouseClick()
+    cp.exec(`open ${ILLUSTRATOR_APPLICATION_PATH}`, (error, stdout, stderr) => {
+        console.log(error)
+        console.log(stdout)
+        console.log(stderr)
 
-    robotJS.moveMouseSmooth(mousePosition.illustrator.fichier__imprimer.x, mousePosition.illustrator.fichier__imprimer.y)
+        robotJS.setMouseDelay(illustratorOpeningTime_millisecond)
 
-    robotJS.mouseClick()
+        robotJS.moveMouseSmooth(mousePosition.illustrator.fichier.x, mousePosition.illustrator.fichier.y)
 
-    const image = robotJS.screen.capture()
+        robotJS.setMouseDelay(defaultMouseDelay)
 
-    console.info("screenSize: ", image.width, " x ", image.height)
+        robotJS.mouseClick()
 
-    // fs.writeFileSync(`screenCapture-${imageCaptureCounter}.raw`, image.image)
+        robotJS.moveMouseSmooth(mousePosition.illustrator.fichier__imprimer.x, mousePosition.illustrator.fichier__imprimer.y)
 
-    imageCaptureCounter++
+        robotJS.mouseClick()
 
-    robotJS.moveMouseSmooth(mousePosition.illustrator.printerWindow.x, mousePosition.illustrator.printerWindow.y)
+        const image = robotJS.screen.capture()
 
-    robotJS.mouseClick()
+        console.info("screenSize: ", image.width, " x ", image.height)
 
-})
+        // fs.writeFileSync(`screenCapture-${imageCaptureCounter}.raw`, image.image)
+
+        imageCaptureCounter++
+
+        robotJS.moveMouseSmooth(mousePosition.illustrator.printerWindow.x, mousePosition.illustrator.printerWindow.y)
+
+        robotJS.mouseClick()
+
+    })
+}
+printADocument()
 
