@@ -59,7 +59,7 @@ cp.exec(`open ${ILLUSTRATOR_APPLICATION_PATH}`, (error, stdout, stderr) => {
 
     imageCaptureCounter++
 
-    robotJS.moveMouseSmooth(mousePosition.illustrator.fichier__imprimer.x, mousePosition.illustrator.fichier__imprimer.y)
+    robotJS.moveMouseSmooth(mousePosition.illustrator.printerWindow.x, mousePosition.illustrator.printerWindow.y)
 
     robotJS.mouseClick()
 
