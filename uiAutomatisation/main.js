@@ -73,7 +73,7 @@ function printADocument() {
 
             robotJS.mouseClick()
 
-            setTimeout(printADocument, 1000)
+            setTimeout(printADocument, 60_000)
 
         }, 1000)
 
