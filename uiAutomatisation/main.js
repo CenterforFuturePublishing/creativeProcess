@@ -33,6 +33,8 @@ const ILLUSTRATOR_APPLICATION_PATH = "/Applications/Adobe\\ Illustrator\\ 2020/A
 
 let imageCaptureCounter = 0
 
+let printedPapper = 1
+
 function printADocument() {
 
     robotJS.setMouseDelay(defaultMouseDelay)
@@ -73,7 +75,10 @@ function printADocument() {
 
             robotJS.mouseClick()
 
-            setTimeout(printADocument, 60_000)
+            console.log("printed paper: ", printedPapper)
+            printedPapper++
+
+            setTimeout(printADocument, 15 * 60_000)
 
         }, 1000)
 
