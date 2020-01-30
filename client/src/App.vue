@@ -1,15 +1,25 @@
 <template>
-    <div id="app">
-        <h1>font variable parameters interface</h1>
-        <label>
-            <input type="text" v-model="$store.state.textContent">
-        </label>
+    <main id="app">
+        <header>
+            <h1>font variable parameters interface</h1>
 
-        <cursor-ui v-for="(control, keyName) in $listOfControl" :control="control" :name="keyName"/>
+            <label>
+                <input type="text" v-model="$store.state.textContent">
+            </label>
+        </header>
 
-        <variable-font-viewer/>
-        <DataForm/>
-    </div>
+        <section class="box-viewer">
+            <variable-font-viewer/>
+        </section>
+
+        <section class="box-form">
+            <DataForm/>
+        </section>
+
+        <section class="box-controls">
+            <cursor-ui v-for="(control, keyName) in $listOfControl" :control="control" :name="keyName"/>
+        </section>
+    </main>
 </template>
 
 <script lang="ts">
@@ -39,6 +49,24 @@
         -moz-osx-font-smoothing: grayscale;
         text-align: center;
         color: #2c3e50;
-        margin-top: 60px;
+        display: grid;
+        grid-template-rows: 25vh 45vh 5vh 25vh;
+        margin: 0;
+        box-sizing: border-box;
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+
+        > * {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+    }
+
+    .box-controls {
+        display: grid;
+        grid-template-columns: auto auto auto;
     }
 </style>

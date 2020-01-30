@@ -4,7 +4,7 @@ import Vue from 'vue'
 import Vuex, {StoreOptions} from 'vuex'
 import {ISocketEvents} from "../../../ISocketEvents"
 
-declare const io: any
+import * as io from 'socket.io-client';
 
 Vue.use(Vuex)
 
@@ -15,7 +15,7 @@ declare interface IStore extends IWebAppData {
 const store: StoreOptions<IStore> = {
   state: {
     textContent: "waiting…",
-    socket: io('http://localhost:3000'),
+    socket: io.connect('http://localhost:3000'),
     listOfControl: {
       "vertical axes": {
         min:100,

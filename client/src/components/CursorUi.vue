@@ -3,6 +3,12 @@
         <h4>{{name}}</h4>
         <p>{{$value}}</p>
         <input type="range" v-model="$value" :min="$min" :max="$max">
+        <!--
+    todo: faire des images ou annims pour info
+        https://material.io/design/typography/understanding-typography.html#type-properties
+        rapheal granier (voir chaine vimeo)
+        -->
+        <button style="display: block; margin: auto">info ?</button>
     </div>
 </template>
 

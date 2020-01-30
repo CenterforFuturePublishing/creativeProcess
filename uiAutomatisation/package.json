@@ -1,0 +1,16 @@
+{
+  "name": "uiautomatisation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mouse-controller": "^1.0.0",
+    "robotjs": "^0.6.0",
+    "xoi": "^1.0.0"
+  }
+}
