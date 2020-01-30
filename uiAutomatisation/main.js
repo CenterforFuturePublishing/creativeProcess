@@ -20,6 +20,10 @@ const mousePosition = {
         fichier__imprimer: {
             x: 250 - posePad.x,
             y: 570 - posePad.y,
+        },
+        printerWindow: {
+            x: 922 - posePad.x,
+            y: 853 - posePad.y,
         }
     }
 }
@@ -39,9 +43,9 @@ cp.exec(`open ${ILLUSTRATOR_APPLICATION_PATH}`, (error, stdout, stderr) => {
 
     robotJS.moveMouseSmooth(mousePosition.illustrator.fichier.x, mousePosition.illustrator.fichier.y)
 
-    robotJS.mouseClick()
-
     robotJS.setMouseDelay(defaultMouseDelay)
+
+    robotJS.mouseClick()
 
     robotJS.moveMouseSmooth(mousePosition.illustrator.fichier__imprimer.x, mousePosition.illustrator.fichier__imprimer.y)
 
@@ -51,10 +55,13 @@ cp.exec(`open ${ILLUSTRATOR_APPLICATION_PATH}`, (error, stdout, stderr) => {
 
     console.info("screenSize: ", image.width, " x ", image.height)
 
-    fs.writeFile(`screenCapture-${imageCaptureCounter}.png`, image.image, () => {
+    // fs.writeFileSync(`screenCapture-${imageCaptureCounter}.raw`, image.image)
 
-    })
+    imageCaptureCounter++
 
-    // robotJS.mouseClick()
+    robotJS.moveMouseSmooth(mousePosition.illustrator.fichier__imprimer.x, mousePosition.illustrator.fichier__imprimer.y)
+
+    robotJS.mouseClick()
+
 })
 
