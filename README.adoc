@@ -36,3 +36,9 @@ In terminal,
 - ne pas avoir de sension pour démarer tout de suit dans une session
 
 - tiemveiwer lancer automatiquement
+
+- mise en veille
+
+- economisateur ecran
+
+- faire que le mac mini s'allume automatiqueent a 8h du mat
