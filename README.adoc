@@ -42,3 +42,5 @@ In terminal,
 - economisateur ecran
 
 - faire que le mac mini s'allume automatiqueent a 8h du mat
+
+- supprimer le mot de passe pour la session (et non mettre un mot de passe vide)
