@@ -4,6 +4,7 @@ const fs        = require("fs")
 const { windowManager } = require("node-window-manager")
 
 const illustratorOpeningTime_millisecond = 10000
+const cutterMappOpeningTime_millisecond  = 10000
 
 const defaultMouseDelay = 500
 
@@ -25,7 +26,21 @@ const mousePosition = {
         printerWindow: {
             x: 922 - posePad.x,
             y: 853 - posePad.y,
-        }
+        },
+        fichier__decoupePlugin: {
+            x: 300,
+            y: 530,
+        },
+        fichier__decoupePlugin__openPlugin: {
+            x: 600,
+            y: 550,
+        },
+    },
+    cuttingMaster: {
+        terminer: {
+            x: 1220,
+            y: 860,
+        },
     }
 }
 
@@ -39,7 +54,7 @@ function printADocument() {
 
     robotJS.setMouseDelay(defaultMouseDelay)
 
-    cp.exec(`open ${ILLUSTRATOR_APPLICATION_PATH}`, (error, stdout, stderr) => {
+    cp.exec(`open document.pdf -a ${ILLUSTRATOR_APPLICATION_PATH}`, (error, stdout, stderr) => {
 
 
         setTimeout(() => {
@@ -51,21 +66,37 @@ function printADocument() {
             console.log("focused window instance: ", window)
             console.log("focused window title: ", window.getTitle())
 
-            robotJS.setMouseDelay(illustratorOpeningTime_millisecond)
+            console.log("focused window title: ", window.getTitle())
+
+            robotJS.keyTap("enter")
 
             robotJS.moveMouseSmooth(mousePosition.illustrator.fichier.x, mousePosition.illustrator.fichier.y)
 
-            robotJS.setMouseDelay(defaultMouseDelay)
+            robotJS.mouseClick()
+
+            // robotJS.moveMouseSmooth(mousePosition.illustrator.fichier__imprimer.x, mousePosition.illustrator.fichier__imprimer.y)
+            // console.log("impirmer: focused window instance: ", window)
+            let date = new Date()
+
+            robotJS.moveMouseSmooth(mousePosition.illustrator.fichier__decoupePlugin.x, mousePosition.illustrator.fichier__decoupePlugin.y)
+            console.log("fichier__decoupePlugin: focused window instance: ", window, date.getMinutes(), " : ", date.getSeconds())
+
+            robotJS.moveMouseSmooth(mousePosition.illustrator.fichier__decoupePlugin__openPlugin.x, mousePosition.illustrator.fichier__decoupePlugin__openPlugin.y)
+            date = new Date()
+            console.log("fichier__decoupePlugin__openPlugin: focused window instance: ", window, date.getMinutes(), " : ", date.getSeconds())
 
             robotJS.mouseClick()
 
-            robotJS.moveMouseSmooth(mousePosition.illustrator.fichier__imprimer.x, mousePosition.illustrator.fichier__imprimer.y)
+            robotJS.setMouseDelay(cutterMappOpeningTime_millisecond)
 
+            robotJS.moveMouseSmooth(mousePosition.cuttingMaster.terminer.x, mousePosition.cuttingMaster.terminer.y)
+            date = new Date()
+            console.log("cuttingMaster: focused window instance: ", window, date.getMinutes(), " : ", date.getSeconds())
             robotJS.mouseClick()
 
-            const image = robotJS.screen.capture()
-
-            console.info("screenSize: ", image.width, " x ", image.height)
+            // const image = robotJS.screen.capture()
+            //
+            // console.info("screenSize: ", image.width, " x ", image.height)
 
             // fs.writeFile(`screenCapture-${imageCaptureCounter}.raw`, image.image, {encoding: "base64"}, err => {
             //     if( err ) {
@@ -74,13 +105,12 @@ function printADocument() {
             // })
             // imageCaptureCounter++
 
-            robotJS.moveMouseSmooth(mousePosition.illustrator.printerWindow.x, mousePosition.illustrator.printerWindow.y)
-
-            robotJS.mouseClick()
+            // robotJS.moveMouseSmooth(mousePosition.illustrator.printerWindow.x, mousePosition.illustrator.printerWindow.y)
+            // robotJS.mouseClick()
 
             console.log("printed paper: ", printedPapper)
             printedPapper++
-        }, 1000)
+        }, illustratorOpeningTime_millisecond)
 
     })
 }
