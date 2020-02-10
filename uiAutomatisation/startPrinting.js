@@ -38,12 +38,12 @@ const mousePosition = {
     },
     cuttingMaster: {
         couper: {
-            x: 920 - posePad.x,
-            y: 867 - posePad.y,
+            x: 920,
+            y: 867,
         },
         terminer: {
-            x: 1000 - posePad.x,
-            y: 867 - posePad.y,
+            x: 1000,
+            y: 867,
         },
     }
 }
