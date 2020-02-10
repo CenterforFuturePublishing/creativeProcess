@@ -94,9 +94,14 @@ function printADocument() {
 
             robotJS.setMouseDelay(cutterMappOpeningTime_millisecond)
 
-            robotJS.moveMouseSmooth(mousePosition.cuttingMaster.couper.x, mousePosition.cuttingMaster.terminer.y)
+            robotJS.moveMouseSmooth(mousePosition.cuttingMaster.couper.x, mousePosition.cuttingMaster.couper.y)
             date = new Date()
-            console.log("cuttingMaster: focused window instance: ", window, date.getMinutes(), " : ", date.getSeconds())
+            console.log("cuttingMaster.couper: focused window instance: ", window, date.getMinutes(), " : ", date.getSeconds())
+            robotJS.mouseClick()
+
+            robotJS.moveMouseSmooth(mousePosition.cuttingMaster.terminer.x, mousePosition.cuttingMaster.terminer.y)
+            date = new Date()
+            console.log("cuttingMaster.terminer: focused window instance: ", window, date.getMinutes(), " : ", date.getSeconds())
             robotJS.mouseClick()
 
             // const image = robotJS.screen.capture()
