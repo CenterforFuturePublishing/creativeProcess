@@ -10,7 +10,7 @@ function startPrinting() {
             console.log(stdout)
             console.log(stderr)
 
-            setTimeout(startPrinting, 5 * 60_000)
+            setTimeout(startPrinting, 8 * 60_000)
         }
     })
 }
