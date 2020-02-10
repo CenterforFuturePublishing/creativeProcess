@@ -37,9 +37,13 @@ const mousePosition = {
         },
     },
     cuttingMaster: {
+        couper: {
+            x: 920 - posePad.x,
+            y: 867 - posePad.y,
+        },
         terminer: {
-            x: 1220,
-            y: 860,
+            x: 1000 - posePad.x,
+            y: 867 - posePad.y,
         },
     }
 }
@@ -54,7 +58,8 @@ function printADocument() {
 
     robotJS.setMouseDelay(defaultMouseDelay)
 
-    cp.exec(`open document.pdf -a ${ILLUSTRATOR_APPLICATION_PATH}`, (error, stdout, stderr) => {
+    //cp.exec(`open document.pdf -a ${ILLUSTRATOR_APPLICATION_PATH}`, (error, stdout, stderr) => {
+    cp.exec(`open ${ILLUSTRATOR_APPLICATION_PATH}`, (error, stdout, stderr) => {
 
 
         setTimeout(() => {
@@ -89,7 +94,7 @@ function printADocument() {
 
             robotJS.setMouseDelay(cutterMappOpeningTime_millisecond)
 
-            robotJS.moveMouseSmooth(mousePosition.cuttingMaster.terminer.x, mousePosition.cuttingMaster.terminer.y)
+            robotJS.moveMouseSmooth(mousePosition.cuttingMaster.couper.x, mousePosition.cuttingMaster.terminer.y)
             date = new Date()
             console.log("cuttingMaster: focused window instance: ", window, date.getMinutes(), " : ", date.getSeconds())
             robotJS.mouseClick()
