@@ -1,5 +1,4 @@
 import express from "express"
-import bodyParser from "body-parser"
 
 export class Server {
 
@@ -19,7 +18,9 @@ export class Server {
 
     this._app.post("/api/poem", (req, res, next) => {
 
-      console.log("connection")
+      const date = new Date()
+
+      console.log("connection at : ", date.getHours(), " : ", date.getMinutes(), " : ", date.getSeconds())
 
       console.log(req.body)
 
