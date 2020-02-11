@@ -2,20 +2,32 @@ const puppeteer = require('puppeteer');
 
 const css = `
             body {
-                margin: 0;
-                color: red;
-            }
-            
-            .container {
-                background: azure;
-                width: 100%;
-            }
+            margin: 0;
+            color: red;
+        }
+
+        .container {
+            background: azure;
+            width: 100%;
+            display: flex;
+        }
+
+        .column {
+            padding: 0 1cm;
+        }
         `
 
 puppeteer.launch({headless: false}).then(async browser => {
     const page = await browser.newPage();
 
     const result = await page.evaluate(data => {
+
+        const {
+            poem,
+            graisse,
+            contraste,
+            rigidite
+        } = data.apiData
 
         // style
         const styleContainer = document.createElement("style")
@@ -31,14 +43,14 @@ puppeteer.launch({headless: false}).then(async browser => {
 
         // text Elemeent
         const textElement = document.createElement("div")
-        textElement.innerText = data.text
+        textElement.innerText = poem
 
         document.body.appendChild(textElement)
 
         return document.body.getBoundingClientRect().width;
     }, {
-        text: "coucou david",
-        style: css
+        style: css,
+        apiData: apiData,
     });
 
     await page.pdf({
