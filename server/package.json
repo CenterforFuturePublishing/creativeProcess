@@ -2,11 +2,12 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.js",
+  "main": "prod/index.js",
   "scripts": {
     "dev": "tsc --watch",
     "build": "tsc --build",
-    "run" : "node dist/main.js"
+    "run": "node prod/main.js",
+    "clean": "rm -rf prod/ && rm tsconfig.tsbuildinfo"
   },
   "author": "",
   "license": "ISC",
