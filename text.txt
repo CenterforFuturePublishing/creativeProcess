@@ -185,3 +185,309 @@ Et du rège ! Mais ezzantoux ! D'aurit ?
 Mon beste dieu vous nos et autour déconnure.
 Mais si telle à moi, je crois sacrèner : tenchant.
 Tu qui par les paubles, et tu veux.
+
+digitallyric@cffp creativeProcess % pwd
+/Users/digitallyric/Desktop/robot-app/creativeProcess
+digitallyric@cffp creativeProcess % cd server
+digitallyric@cffp server % npm run
+Scripts available in server via `npm run-script`:
+  dev
+    tsc --watch
+  build
+    tsc --build
+  run
+    node prod/main.js
+  clean
+    rm -rf prod/ && rm tsconfig.tsbuildinfo
+
+
+   ╭────────────────────────────────────────────────────────────────╮
+   │                                                                │
+   │      New patch version of npm available! 6.13.6 → 6.13.7       │
+   │   Changelog: https://github.com/npm/cli/releases/tag/v6.13.7   │
+   │               Run npm install -g npm to update!                │
+   │                                                                │
+   ╰────────────────────────────────────────────────────────────────╯
+
+digitallyric@cffp server % npm run run
+
+> server@1.0.0 run /Users/digitallyric/Desktop/robot-app/creativeProcess/server
+> node prod/main.js
+
+app listening on port 3000!
+connection at :  19  :  23  :  47
+{
+  poem: 'Brélée à mon affraume unifort !\n' +
+    'Que le blombe en un coeur de nause\n' +
+    'Et puisse se rappracher fou.\n' +
+    '\n' +
+    'Lserrier rendez le jour que votre\n' +
+    'Conte les perses ? Saisit belle exprendre\n' +
+    "Mattes sur lui coureux de l'impoir.",
+  graisse: 30,
+  contraste: 60,
+  rigidite: 50
+}
+connection at :  19  :  25  :  25
+{
+  poem: "Avec aussi pur les cieux qu'illuce et des doutes !\n" +
+    'Distanis des volont muares sans partout noire\n' +
+    'Autre craintine ses petits enfants ta vagabonde\n' +
+    'Les Seingliers de mon choeude. réchaque une haite!',
+  graisse: 100,
+  contraste: 100,
+  rigidite: 20
+}
+connection at :  19  :  26  :  7
+{
+  poem: 'Nomme une chose, non vostaine.\n' +
+    'Les autres sont se voluie en son\n' +
+    'Avier pour fêtre ces choses, sans sombron!',
+  graisse: 70,
+  contraste: 20,
+  rigidite: 80
+}
+====
+connection at :  19  :  29  :  49
+{
+  poem: 'Le don beau la mer, est sans flamme en la clefotie.\n' +
+    'Les combats de la sonne aux chapeaux de la terre\n' +
+    'Un vieux unique enmends sous le nous\n' +
+    "Pour s'espérants que le bonheur qui se déferle.",
+  graisse: 100,
+  contraste: 60,
+  rigidite: 10
+}
+connection at :  19  :  29  :  53
+{
+  poem: 'ore, mient. devant leur planquer dan challie\n' +
+    'On le songe à la vie, moi fort, elle avait\n' +
+    "Qu'ils nous ! Où naïolon se terrasie,\n" +
+    'Aveugnée en son chant de balez retotu?\n' +
+    '\n' +
+    'Se rache en chaque importemennent.\n' +
+    'Les branches du jour, les souffrons, le\n' +
+    'Voyons de chaque celui tout leur ailere.\n' +
+    'Dont la monde étrans de la félicre?\n' +
+    '\n' +
+    "Des pénèbres mon cœur qui ne parler l'étrsti\n" +
+    'Comme du temps que la regarde en secret\n' +
+    'Il dorrais les plus en écartailles délices ce quelque.\n' +
+    '\n' +
+    'Nours, la grand, pleurante de leur âme le vise\n' +
+    "Lusse est un peu gâtiment, qui s'approcie,\n" +
+    'Et je me suis sur poudre que tout acervu ?',
+  graisse: 30,
+  contraste: 50,
+  rigidite: 50
+}
+=====
+connection at :  19  :  33  :  19
+{
+  poem: 'Aux parfums les écriveaux et les cachots. Houreaux !\n' +
+    'Assez un jour, Combagant le quin.\n' +
+    'VTulent ce matin, comme au fond des bois.\n' +
+    'Éclaite, sous les cœurs infâmes. Je saige !',
+  graisse: 60,
+  contraste: 50,
+  rigidite: 20
+}
+connection at :  19  :  34  :  43
+{
+  poem: "Puisqu'on s'amassait à l'or d'allhor\n" +
+    'Cette partout germe et sourira, Paris des peines,\n' +
+    'Les poinges en couleurs leur florais. Votre huis.',
+  graisse: 50,
+  contraste: 20,
+  rigidite: 30
+}
+connection at :  19  :  35  :  23
+{
+  poem: "Qu'il eût sous été moins doux à la brume.\n" +
+    'ce n est le pardon des charmes\n' +
+    'Le chaud sous la désolutée, et les cimes\n' +
+    "Grimpant le passé, l'espérance, s'envolent.\n" +
+    '\n' +
+    '. Ah ! Si vous me faisiez nous défendre,\n' +
+    'En vous fidèles, car peut aussi, le plus\n' +
+    "Tous les murmures s'en vont demain jadis\n" +
+    'Sous leur tranquillité des sensifs et bouillante.\n' +
+    '\n' +
+    'Et toi, des chants de ces contentements :\n' +
+    "Il est doux d'être un peu charmant.\n" +
+    "Ce soir, l'homme ne de leur plus de repos.\n" +
+    '\n' +
+    "Je ne crois pas si c'est permis.\n" +
+    "Mais je ne suis pas si ce nom qu'on chérit\n" +
+    "Toujours en sa raison, toujours l'a été.",
+  graisse: 100,
+  contraste: 0,
+  rigidite: 0
+}
+=====connection at :  19  :  40  :  44
+{
+  poem: 'Par un beau jour de la vie\n' +
+    'Au levant de ton âme, paisible.\n' +
+    'Tout être élu.\n' +
+    '\n' +
+    'Vers les calices nœuds baisa,\n' +
+    'Toujours si tranchant ne doit pas fuir\n' +
+    "Et je n'ai avait pas d'amour.",
+  graisse: 10,
+  contraste: 100,
+  rigidite: 20
+}
+connection at :  19  :  40  :  48
+{
+  poem: 'Soldat en contraint de faim\n' +
+    "Et se tenand d'un salon à l'oppête\n" +
+    "Après son cœur et sur l'autre!\n" +
+    '\n' +
+    "En un coup aux yeux d'argeniers\n" +
+    'Sans même, que pas un sage, oui, vous\n' +
+    'Nous vous trouvé son son de doux !uiu',
+  graisse: 20,
+  contraste: 70,
+  rigidite: 0
+}
+connection at :  19  :  41  :  9
+{
+  poem: "Qu'il fleurit sans bélis.\n" +
+    'De bon cœurs il silend le front\n' +
+    'Un peuple Jussiplie ! Voile!\n' +
+    '\n' +
+    "Me rira petie et s'effagard aile ;\n" +
+    'Ne sa savole de ce retre ; la culbute qui fuit,\n' +
+    'Tant de fois pas ? jeuness?',
+  graisse: 30,
+  contraste: 60,
+  rigidite: 40
+}
+connection at :  19  :  47  :  32
+{
+  poem: "Se sentir au milieu de l'échafaud, attardés\n" +
+    'Dans le flot extrappé des habités se\n' +
+    "Jettent, sous l'oeil des quelques commence.\n" +
+    'Fonds flots ! Des vents, nous cette.\n' +
+    '\n' +
+    "Ensemble franchi d'être restont connue,\n" +
+    'I la glaspher de ses enfants de la couleur\n' +
+    "La voix s'entr'ont pleuré de 'on !\n" +
+    "C'est lui quand au juge, mais il flammau.\n" +
+    '\n' +
+    "Qu'hors de si l'enfuyais et d'ombre et repourure,\n" +
+    "S'il aura va, se tien est plus prompte ;\n" +
+    "L souvent qui les doit s'est élanre, en soi?\n" +
+    '\n' +
+    "Vous h'attende éternel hier, à vot\n" +
+    'Périt, tout plein de caporgée, et de la nuit !\n' +
+    'Donnez à plein sessigre est venu.',
+  graisse: 40,
+  contraste: 60,
+  rigidite: 30
+}
+connection at :  19  :  48  :  39
+{
+  poem: "Sous le bandeau d'azur qui chante à la terre,\n" +
+    'La marque des champs, le pauvre blé :\n' +
+    'Et lafemme, on en croit voir aussi !\n' +
+    'Le sourire à la lèvre est sa marque\n' +
+    'sous la lune ou son rythme aussi',
+  graisse: 10,
+  contraste: 0,
+  rigidite: 0
+}
+connection at :  19  :  50  :  0
+{
+  poem: "De l'allégresse soudain brise\n" +
+    "Où l'œil en adorait ? Le petit haut\n" +
+    'De ce point me fait planté !\n' +
+    '\n' +
+    'Va poindre a vu plus à mon des\n' +
+    "L'attraper et la pudeur en flever sa brune.,\n" +
+    "Et s'enveloppant d'un souvent ?",
+  graisse: 100,
+  contraste: 100,
+  rigidite: 0
+}
+connection at :  19  :  52  :  13
+{
+  poem: 'Clique la maison du parfale\n' +
+    'De leurs cous. Et Corrice au firs.\n' +
+    "La brute de l'été. Ô mis.\n" +
+    '\n' +
+    'Mais pour en ars à cout ! Q\n' +
+    'A cent promènes achèves aux vitons !\n' +
+    'Si triste dans mon cœur consule !',
+  graisse: 50,
+  contraste: 60,
+  rigidite: 40
+}
+connection at :  19  :  52  :  14
+{
+  poem: "Retournel jastine en vert contre la plaient l'inceinte.\n" +
+    'Le phare qui moi, qui ferait saint.\n' +
+    "Comme l'aube et le nid où notelle et le feuillet\n" +
+    "Comme un mobile d'hondeur s'achève.\n" +
+    "S'il se perdant les rocherons !",
+  graisse: 90,
+  contraste: 60,
+  rigidite: 0
+}
+connection at :  19  :  52  :  21
+{
+  poem: "Avec les plus d'arbres, dons de mes\n" +
+    'Sonnet de la forêt son ombre et de laurie, réang,\n' +
+    'Ceux qui veulle mesure. Il antente à nous assire !',
+  graisse: 50,
+  contraste: 40,
+  rigidite: 30
+}
+connection at :  19  :  55  :  53
+{
+  poem: 'Des collines et des regrets : perdus, \n' +
+    'Aux pieds noirs du soirs, ont dans leur coeur\n' +
+    'La mer est sous leurs poids douloureuse\n' +
+    'Tout le berce, elle regarde la joie ',
+  graisse: 10,
+  contraste: 0,
+  rigidite: 70
+}
+connection at :  19  :  56  :  28
+{
+  poem: 'Seau, de l étale en son cœur,\n' +
+    "N'ayant pas les clefs et les bois ;\n" +
+    'Et souvent, pour ces amomages?\n' +
+    '\n' +
+    'Pour que le bête en deuil insignett\n' +
+    "Ensevelir. Dans l'air si pourclite : c'est,\n" +
+    'Quelque sous chaque matin e!',
+  graisse: 60,
+  contraste: 40,
+  rigidite: 40
+}
+connection at :  19  :  57  :  35
+{
+  poem: 'Tous souvents de leurs bêtes,\n' +
+    'Et que mon souffle oubli mut;\n' +
+    'Si nous fumes reunis ! Nous!\n' +
+    '\n' +
+    'mut frémira. Et le derriere\n' +
+    "Couleur d'un ardent agneau tiede\n" +
+    'Tout à remplir damour ?',
+  graisse: 70,
+  contraste: 100,
+  rigidite: 0
+}
+connection at :  20  :  15  :  11
+{ poem: 'c est pas faux ', graisse: 10, contraste: 10, rigidite: 10 }
+connection at :  20  :  19  :  13
+{
+  poem: 'Elles sont les caresses blanchies \n' +
+    'Mais leur rameau lui donne le ciel ! \n' +
+    'Jamais.\n' +
+    'Le printemps ne sort plus!',
+  graisse: 10,
+  contraste: 0,
+  rigidite: 0
+}

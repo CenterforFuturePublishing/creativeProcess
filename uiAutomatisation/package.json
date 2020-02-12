@@ -4,14 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsc --watch",
+    "build": "tsc"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/node": "^13.7.1",
     "mouse-controller": "^1.0.0",
     "node-window-manager": "^2.0.1",
     "robotjs": "^0.6.0",
     "xoi": "^1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^3.7.5"
   }
 }
