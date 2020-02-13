@@ -53,6 +53,7 @@ var main_1 = require("../windowManager/main");
 var stringConain_1 = __importDefault(require("../_tools/stringConain"));
 var closeWindow_1 = __importDefault(require("./closeWindow"));
 var illustratorProces_1 = __importDefault(require("./illustratorProces"));
+var cuterMasterProcess_1 = __importDefault(require("./cuterMasterProcess"));
 /**
  * parameters
  */
@@ -99,11 +100,11 @@ function main() {
                                     }
                                 });
                                 listOfPositionInDocument = [
-                                    1, 311,
-                                    22, 3462,
-                                    43, 3403,
-                                    64, 2818,
-                                    85, 2425,
+                                    1.311,
+                                    22.3462,
+                                    43.3403,
+                                    64.2818,
+                                    85.2425,
                                 ];
                                 randomColumnPosition = listOfPositionInDocument[Math.floor(Math.random() * listOfPositionInDocument.length)];
                                 illustratorProces_1.default({
@@ -113,6 +114,7 @@ function main() {
                                     rigidite: -10,
                                     yPositionInDocument: randomColumnPosition
                                 });
+                                cuterMasterProcess_1.default();
                             }
                         }
                     }
