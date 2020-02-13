@@ -4,7 +4,8 @@ import printInfo from "../_tools/printInfo"
 import {getAllWindow, setWindowPositionAndSize} from "../windowManager/main"
 import stringConain from "../_tools/stringConain"
 import closeWindow from "./closeWindow"
-import illustratorProces from "./illustratorProces"
+import illustratorLayoutProces from "./illustratorProces"
+import cuterMasterProcess from "./cuterMasterProcess"
 
 /**
  * parameters
@@ -70,13 +71,15 @@ async function main() {
 
         const randomColumnPosition = listOfPositionInDocument[ Math.floor(Math.random() * listOfPositionInDocument.length) ]
 
-        illustratorProces({
+        illustratorLayoutProces({
           poem: "coucou\nnouveau poeme",
           contraste: 55,
           graisse: 10000,
           rigidite: -10,
           yPositionInDocument: randomColumnPosition
         })
+
+        cuterMasterProcess()
       }
 
     }
