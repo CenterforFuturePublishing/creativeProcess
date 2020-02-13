@@ -4,7 +4,9 @@ import {getActiveWindowInfo} from "../windowManager/main"
 import printInfo from "../_tools/printInfo"
 import {CUTTING_MASTER_CUTTING_PLUGIN_WINDOW_NAME, DEFAULT_MOUSE_DELAY} from "./main"
 
-const TIME_TO_WAIT_FOR_CUTTING_MASTER = 10_000
+// const TIME_TO_WAIT_FOR_CUTTING_MASTER = 8_000 // <-- crash
+const TIME_TO_WAIT_FOR_CUTTING_MASTER = 20_000 // <-- ok
+// const TIME_TO_WAIT_FOR_CUTTING_MASTER = 60_000 // <-- secure
 
 export default async function(): Promise<boolean> {
   const cuttingMasterPluginIsLunch = await lunchCuttingMasterPluginFromIllustrator()
@@ -30,14 +32,15 @@ export default async function(): Promise<boolean> {
 
 
       try {
-        // robotJS.setMouseDelay(1000)
-        robotJS.setMouseDelay(1)
+        robotJS.setMouseDelay(1000)
 
-        robotJS.moveMouseSmooth(buttonPosition_send.x, buttonPosition_send.y, 1)
+        robotJS.moveMouseSmooth(buttonPosition_send.x, buttonPosition_send.y, 5)
 
         robotJS.mouseClick()
 
         robotJS.moveMouseSmooth(buttonPosition_close.x, buttonPosition_close.y, 5)
+
+        robotJS.mouseClick()
 
         robotJS.setMouseDelay(DEFAULT_MOUSE_DELAY)
 
