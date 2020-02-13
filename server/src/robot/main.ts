@@ -61,11 +61,11 @@ async function main() {
 
 
         const listOfPositionInDocument = [
-          1,311,
-          22,3462,
-          43,3403,
-          64,2818,
-          85,2425,
+          1.311,
+          22.3462,
+          43.3403,
+          64.2818,
+          85.2425,
         ]
 
         const randomColumnPosition = listOfPositionInDocument[ Math.floor(Math.random() * listOfPositionInDocument.length) ]
