@@ -49,23 +49,62 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var robotJS = __importStar(require("robotjs"));
 var main_1 = require("../windowManager/main");
 var printInfo_1 = __importDefault(require("../_tools/printInfo"));
+var main_2 = require("./main");
 var TIME_TO_WAIT_FOR_CUTTING_MASTER = 10000;
 function default_1() {
     return __awaiter(this, void 0, void 0, function () {
-        var cuttingMasterWindow;
+        var cuttingMasterPluginIsLunch, activeWindow, rightOfCuttingMasterPluginWindow, bottomOfCuttingMasterPluginWindow, buttonPosition_send, buttonPosition_close;
         return __generator(this, function (_a) {
             switch (_a.label) {
-                case 0: return [4 /*yield*/, lunchCuttingMasterFromIllustrator()];
+                case 0: return [4 /*yield*/, lunchCuttingMasterPluginFromIllustrator()];
                 case 1:
-                    cuttingMasterWindow = _a.sent();
-                    console.info("=====", cuttingMasterWindow, "-----");
-                    return [2 /*return*/, cuttingMasterWindow];
+                    cuttingMasterPluginIsLunch = _a.sent();
+                    if (cuttingMasterPluginIsLunch) {
+                        activeWindow = main_1.getActiveWindowInfo();
+                        if (activeWindow.title === main_2.CUTTING_MASTER_CUTTING_PLUGIN_WINDOW_NAME) {
+                            rightOfCuttingMasterPluginWindow = (activeWindow.window.getBounds().x || 0) + (activeWindow.window.getBounds().width || 0);
+                            bottomOfCuttingMasterPluginWindow = (activeWindow.window.getBounds().y || 0) + (activeWindow.window.getBounds().height || 0);
+                            buttonPosition_send = {
+                                x: rightOfCuttingMasterPluginWindow - 130,
+                                y: bottomOfCuttingMasterPluginWindow - 30,
+                            };
+                            buttonPosition_close = {
+                                x: rightOfCuttingMasterPluginWindow - 50,
+                                y: bottomOfCuttingMasterPluginWindow - 30,
+                            };
+                            try {
+                                // robotJS.setMouseDelay(1000)
+                                robotJS.setMouseDelay(1);
+                                robotJS.moveMouseSmooth(buttonPosition_send.x, buttonPosition_send.y, 1);
+                                robotJS.mouseClick();
+                                robotJS.moveMouseSmooth(buttonPosition_close.x, buttonPosition_close.y, 5);
+                                robotJS.setMouseDelay(main_2.DEFAULT_MOUSE_DELAY);
+                                console.log("getActiveWindowInfo()");
+                                console.log(main_1.getActiveWindowInfo());
+                                return [2 /*return*/, true];
+                            }
+                            catch (e) {
+                                printInfo_1.default("ERROR: ");
+                                console.error("i suspect plugin doesn't have time to communicate with the plotter");
+                                return [2 /*return*/, false];
+                            }
+                        }
+                        else {
+                            printInfo_1.default("ERROR: ", activeWindow);
+                            console.error("cutting master is open but activeWindow has not correct title");
+                            return [2 /*return*/, false];
+                        }
+                    }
+                    else {
+                        return [2 /*return*/, false];
+                    }
+                    return [2 /*return*/];
             }
         });
     });
 }
 exports.default = default_1;
-function lunchCuttingMasterFromIllustrator() {
+function lunchCuttingMasterPluginFromIllustrator() {
     return __awaiter(this, void 0, void 0, function () {
         return __generator(this, function (_a) {
             return [2 /*return*/, new Promise(function (resolve) {
@@ -74,12 +113,12 @@ function lunchCuttingMasterFromIllustrator() {
                     printInfo_1.default("must be 'fichier'", window.getTitle());
                     if (window.getTitle() !== 'Fichier') {
                         printInfo_1.default("================ \n/!\\/!\\/!\\/!\\/!\\\nERROR: lunchCutingMasterFromIllustrator(), can't open 'Fichier' menu");
-                        resolve(null);
+                        resolve(false);
                     }
                     openIllustratorMenu_fichier_cuttingMaster();
                     openIllustratorMenu_fichier_cuttingMaster_lunchCUtingMaster();
                     setTimeout(function () {
-                        resolve(window);
+                        resolve(true);
                     }, TIME_TO_WAIT_FOR_CUTTING_MASTER);
                 })];
         });

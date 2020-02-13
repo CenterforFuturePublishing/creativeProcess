@@ -2,18 +2,75 @@ import {Window} from "node-window-manager"
 import * as robotJS from "robotjs"
 import {getActiveWindowInfo} from "../windowManager/main"
 import printInfo from "../_tools/printInfo"
+import {CUTTING_MASTER_CUTTING_PLUGIN_WINDOW_NAME, DEFAULT_MOUSE_DELAY} from "./main"
 
 const TIME_TO_WAIT_FOR_CUTTING_MASTER = 10_000
 
-export default async function() {
-  const cuttingMasterWindow = await lunchCuttingMasterFromIllustrator()
+export default async function(): Promise<boolean> {
+  const cuttingMasterPluginIsLunch = await lunchCuttingMasterPluginFromIllustrator()
 
-  console.info("=====", cuttingMasterWindow, "-----")
+  if(cuttingMasterPluginIsLunch) {
 
-  return cuttingMasterWindow
+    const activeWindow = getActiveWindowInfo()
+
+    if(activeWindow.title ===  CUTTING_MASTER_CUTTING_PLUGIN_WINDOW_NAME) {
+
+      const rightOfCuttingMasterPluginWindow    = (activeWindow.window.getBounds().x || 0) + (activeWindow.window.getBounds().width || 0)
+      const bottomOfCuttingMasterPluginWindow   = (activeWindow.window.getBounds().y || 0) + (activeWindow.window.getBounds().height || 0)
+
+      const buttonPosition_send = {
+        x: rightOfCuttingMasterPluginWindow - 130,
+        y: bottomOfCuttingMasterPluginWindow - 30,
+      }
+
+      const buttonPosition_close = {
+        x: rightOfCuttingMasterPluginWindow - 50,
+        y: bottomOfCuttingMasterPluginWindow - 30,
+      }
+
+
+      try {
+        // robotJS.setMouseDelay(1000)
+        robotJS.setMouseDelay(1)
+
+        robotJS.moveMouseSmooth(buttonPosition_send.x, buttonPosition_send.y, 1)
+
+        robotJS.mouseClick()
+
+        robotJS.moveMouseSmooth(buttonPosition_close.x, buttonPosition_close.y, 5)
+
+        robotJS.setMouseDelay(DEFAULT_MOUSE_DELAY)
+
+        console.log("getActiveWindowInfo()")
+        console.log(getActiveWindowInfo())
+
+        return true
+
+      } catch (e) {
+
+        printInfo("ERROR: ")
+        console.error("i suspect plugin doesn't have time to communicate with the plotter")
+
+        return false
+
+      }
+
+    } else {
+      printInfo("ERROR: ", activeWindow)
+      console.error("cutting master is open but activeWindow has not correct title")
+
+      return false
+    }
+
+  } else {
+
+    return false
+
+  }
+
 }
 
-async function lunchCuttingMasterFromIllustrator(): Promise<null | Window> {
+async function lunchCuttingMasterPluginFromIllustrator(): Promise<boolean> {
   return new Promise(resolve => {
     openIllustratorMenu_fichier()
 
@@ -23,7 +80,7 @@ async function lunchCuttingMasterFromIllustrator(): Promise<null | Window> {
 
     if(window.getTitle() !== 'Fichier') {
       printInfo("================ \n/!\\/!\\/!\\/!\\/!\\\nERROR: lunchCutingMasterFromIllustrator(), can't open 'Fichier' menu")
-      resolve(null)
+      resolve(false)
     }
 
     openIllustratorMenu_fichier_cuttingMaster()
@@ -31,7 +88,7 @@ async function lunchCuttingMasterFromIllustrator(): Promise<null | Window> {
     openIllustratorMenu_fichier_cuttingMaster_lunchCUtingMaster()
 
     setTimeout(() => {
-      resolve( window )
+      resolve( true )
     }, TIME_TO_WAIT_FOR_CUTTING_MASTER)
   })
 }

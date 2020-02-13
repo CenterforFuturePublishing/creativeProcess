@@ -7,7 +7,7 @@ import {INITIAL_WINDOW_POSITION, INITIAL_WINDOW_SIZE} from "./main"
 import {Window, windowManager} from "node-window-manager"
 import printInfo from "../_tools/printInfo"
 
-export default async function (allWindowsOpen: Window[]) {
+export default async function (allWindowsOpen: Window[]): Promise<boolean> {
 
   for (const window of allWindowsOpen) {
 
@@ -59,7 +59,7 @@ export default async function (allWindowsOpen: Window[]) {
 
       const cuttingMasterProcess = await cuterMasterProcess()
 
-      return cuttingMasterProcess instanceof Window
+      return cuttingMasterProcess
     }
 
   }

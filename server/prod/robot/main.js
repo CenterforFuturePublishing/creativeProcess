@@ -56,7 +56,7 @@ var lunchPrintingProcess_1 = __importDefault(require("./lunchPrintingProcess"));
  * parameters
  */
 // window names
-var CUTTING_MASTER_CUTTING_PLUGIN_WINDOW_NAME = "Découper/Tracer";
+exports.CUTTING_MASTER_CUTTING_PLUGIN_WINDOW_NAME = "Découper/Tracer";
 // robotJS
 exports.DEFAULT_MOUSE_DELAY = 500;
 // screen info
@@ -79,7 +79,7 @@ function main() {
                     if (!illustratorIsOpen) return [3 /*break*/, 6];
                     printingProcess = void 0;
                     allWindowsOpen = main_1.getAllWindow();
-                    arrayOfCuttingMasterPluginWindow = getWindowInWindowsInstanceByTitle_1.default(allWindowsOpen, CUTTING_MASTER_CUTTING_PLUGIN_WINDOW_NAME);
+                    arrayOfCuttingMasterPluginWindow = getWindowInWindowsInstanceByTitle_1.default(allWindowsOpen, exports.CUTTING_MASTER_CUTTING_PLUGIN_WINDOW_NAME);
                     printInfo_1.default('cutting master plugin windows find: ', arrayOfCuttingMasterPluginWindow);
                     if (!(arrayOfCuttingMasterPluginWindow.length > 0)) return [3 /*break*/, 3];
                     for (_i = 0, arrayOfCuttingMasterPluginWindow_1 = arrayOfCuttingMasterPluginWindow; _i < arrayOfCuttingMasterPluginWindow_1.length; _i++) {

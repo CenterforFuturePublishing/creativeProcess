@@ -11,7 +11,7 @@ import lunchPrintingProcess from "./lunchPrintingProcess"
 
 // window names
 
-const CUTTING_MASTER_CUTTING_PLUGIN_WINDOW_NAME = "Découper/Tracer"
+export const CUTTING_MASTER_CUTTING_PLUGIN_WINDOW_NAME = "Découper/Tracer"
 
 // robotJS
 

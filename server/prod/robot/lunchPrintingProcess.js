@@ -45,7 +45,6 @@ var main_1 = require("../windowManager/main");
 var illustratorProces_1 = __importDefault(require("./illustratorProces"));
 var cuterMasterProcess_1 = __importDefault(require("./cuterMasterProcess"));
 var main_2 = require("./main");
-var node_window_manager_1 = require("node-window-manager");
 var printInfo_1 = __importDefault(require("../_tools/printInfo"));
 function default_1(allWindowsOpen) {
     return __awaiter(this, void 0, void 0, function () {
@@ -97,7 +96,7 @@ function default_1(allWindowsOpen) {
                     return [4 /*yield*/, cuterMasterProcess_1.default()];
                 case 3:
                     cuttingMasterProcess = _a.sent();
-                    return [2 /*return*/, cuttingMasterProcess instanceof node_window_manager_1.Window];
+                    return [2 /*return*/, cuttingMasterProcess];
                 case 4:
                     _i++;
                     return [3 /*break*/, 1];
