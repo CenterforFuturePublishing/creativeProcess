@@ -1,5 +1,6 @@
 import Child_process from "child_process"
 import path from "path"
+import printInfo from "../_tools/printInfo"
 
 export default async function(): Promise<boolean> {
 
@@ -9,7 +10,7 @@ export default async function(): Promise<boolean> {
 
   return new Promise(resolve => {
 
-    console.log(`open ${ILLUSTRATOR_MODEL_FILE_PATH} -a ${ILLUSTRATOR_APPLICATION_PATH}`)
+    printInfo(`open ${ILLUSTRATOR_MODEL_FILE_PATH} -a ${ILLUSTRATOR_APPLICATION_PATH}`)
 
     Child_process.exec(`open ${ILLUSTRATOR_MODEL_FILE_PATH} -a ${ILLUSTRATOR_APPLICATION_PATH}`, (error, stdout, stderr) => {
       setTimeout(() => {

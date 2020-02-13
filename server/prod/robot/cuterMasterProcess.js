@@ -49,6 +49,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var robotJS = __importStar(require("robotjs"));
 var main_1 = require("../windowManager/main");
 var printInfo_1 = __importDefault(require("../_tools/printInfo"));
+var TIME_TO_WAIT_FOR_CUTTING_MASTER = 10000;
 function default_1() {
     return __awaiter(this, void 0, void 0, function () {
         var cuttingMasterWindow;
@@ -58,7 +59,7 @@ function default_1() {
                 case 1:
                     cuttingMasterWindow = _a.sent();
                     console.info("=====", cuttingMasterWindow, "-----");
-                    return [2 /*return*/];
+                    return [2 /*return*/, cuttingMasterWindow];
             }
         });
     });
@@ -79,7 +80,7 @@ function lunchCuttingMasterFromIllustrator() {
                     openIllustratorMenu_fichier_cuttingMaster_lunchCUtingMaster();
                     setTimeout(function () {
                         resolve(window);
-                    }, 30000);
+                    }, TIME_TO_WAIT_FOR_CUTTING_MASTER);
                 })];
         });
     });
@@ -92,6 +93,6 @@ function openIllustratorMenu_fichier_cuttingMaster() {
     robotJS.moveMouseSmooth(200, 540, 1);
 }
 function openIllustratorMenu_fichier_cuttingMaster_lunchCUtingMaster() {
-    robotJS.moveMouseSmooth(550, 550, 50);
+    robotJS.moveMouseSmooth(550, 550, 5);
     robotJS.mouseClick();
 }

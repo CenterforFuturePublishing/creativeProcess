@@ -1,15 +1,17 @@
 import * as robotJS from "robotjs"
 import openIllustrator from "./openIllustrator"
 import printInfo from "../_tools/printInfo"
-import {getAllWindow, setWindowPositionAndSize} from "../windowManager/main"
-import stringConain from "../_tools/stringConain"
-import closeWindow from "./closeWindow"
-import illustratorLayoutProces from "./illustratorProces"
-import cuterMasterProcess from "./cuterMasterProcess"
+import {getAllWindow} from "../windowManager/main"
+import getWindowInWindowsInstanceByTitle from "../windowManager/getWindowInWindowsInstanceByTitle"
+import lunchPrintingProcess from "./lunchPrintingProcess"
 
 /**
  * parameters
  */
+
+// window names
+
+const CUTTING_MASTER_CUTTING_PLUGIN_WINDOW_NAME = "Découper/Tracer"
 
 // robotJS
 
@@ -17,8 +19,8 @@ export const DEFAULT_MOUSE_DELAY = 500
 
 // screen info
 
-const INITIAL_WINDOW_POSITION = {x: 0, y: 24}
-const INITIAL_WINDOW_SIZE     = {
+export const INITIAL_WINDOW_POSITION = {x: 0, y: 24}
+export const INITIAL_WINDOW_SIZE     = {
   width: robotJS.getScreenSize().width - INITIAL_WINDOW_POSITION.x,
   height: robotJS.getScreenSize().height - - INITIAL_WINDOW_POSITION.y,
 }
@@ -33,57 +35,34 @@ async function main() {
 
   if(illustratorIsOpen) {
 
-    for(const window of getAllWindow()) {
+    let printingProcess: boolean
 
-      const title = window.getTitle()
+    const allWindowsOpen = getAllWindow()
 
-      if(stringConain(title, "Adobe Illustrator")) {
+    const arrayOfCuttingMasterPluginWindow = getWindowInWindowsInstanceByTitle(allWindowsOpen, CUTTING_MASTER_CUTTING_PLUGIN_WINDOW_NAME)
 
-        if(stringConain(title, "erreur")) {
-          closeWindow({
-            window,
-            defaultWindowPosition: INITIAL_WINDOW_POSITION,
-          })
-        }
+    printInfo('cutting master plugin windows find: ', arrayOfCuttingMasterPluginWindow)
 
-      } else if (stringConain(title,"DL-MODEL.ai")) {
-
-        window.bringToTop()
-
-        setWindowPositionAndSize({
-          window: window,
-          position: {
-            x: INITIAL_WINDOW_POSITION.x,
-            y: INITIAL_WINDOW_POSITION.y,
-            height: INITIAL_WINDOW_SIZE.height,
-            width: INITIAL_WINDOW_SIZE.width,
-          }
-        })
-
-
-        const listOfPositionInDocument = [
-          1.311,
-          22.3462,
-          43.3403,
-          64.2818,
-          85.2425,
-        ]
-
-        const randomColumnPosition = listOfPositionInDocument[ Math.floor(Math.random() * listOfPositionInDocument.length) ]
-
-        illustratorLayoutProces({
-          poem: "coucou\nnouveau poeme",
-          contraste: 55,
-          graisse: 10000,
-          rigidite: -10,
-          yPositionInDocument: randomColumnPosition
-        })
-
-        cuterMasterProcess()
+    if(arrayOfCuttingMasterPluginWindow.length > 0) {
+      for(const cuttingMasterPluginWindow of arrayOfCuttingMasterPluginWindow) {
+        process.kill(cuttingMasterPluginWindow.processId)
       }
 
+      printingProcess = await lunchPrintingProcess(allWindowsOpen)
+
+    } else {
+      printingProcess = await lunchPrintingProcess(allWindowsOpen)
     }
 
+    if(printingProcess) {
+      printInfo("document printing with success!")
+    } else {
+      printInfo("ERROR: ")
+      console.error("document can't be printing… =(")
+    }
+
+  } else {
+    console.error("check illustrator opening failed")
   }
 }
 

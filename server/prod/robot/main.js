@@ -50,75 +50,63 @@ var robotJS = __importStar(require("robotjs"));
 var openIllustrator_1 = __importDefault(require("./openIllustrator"));
 var printInfo_1 = __importDefault(require("../_tools/printInfo"));
 var main_1 = require("../windowManager/main");
-var stringConain_1 = __importDefault(require("../_tools/stringConain"));
-var closeWindow_1 = __importDefault(require("./closeWindow"));
-var illustratorProces_1 = __importDefault(require("./illustratorProces"));
-var cuterMasterProcess_1 = __importDefault(require("./cuterMasterProcess"));
+var getWindowInWindowsInstanceByTitle_1 = __importDefault(require("../windowManager/getWindowInWindowsInstanceByTitle"));
+var lunchPrintingProcess_1 = __importDefault(require("./lunchPrintingProcess"));
 /**
  * parameters
  */
+// window names
+var CUTTING_MASTER_CUTTING_PLUGIN_WINDOW_NAME = "Découper/Tracer";
 // robotJS
 exports.DEFAULT_MOUSE_DELAY = 500;
 // screen info
-var INITIAL_WINDOW_POSITION = { x: 0, y: 24 };
-var INITIAL_WINDOW_SIZE = {
-    width: robotJS.getScreenSize().width - INITIAL_WINDOW_POSITION.x,
-    height: robotJS.getScreenSize().height - -INITIAL_WINDOW_POSITION.y,
+exports.INITIAL_WINDOW_POSITION = { x: 0, y: 24 };
+exports.INITIAL_WINDOW_SIZE = {
+    width: robotJS.getScreenSize().width - exports.INITIAL_WINDOW_POSITION.x,
+    height: robotJS.getScreenSize().height - -exports.INITIAL_WINDOW_POSITION.y,
 };
 /***/
 robotJS.setMouseDelay(exports.DEFAULT_MOUSE_DELAY);
 function main() {
     return __awaiter(this, void 0, void 0, function () {
-        var illustratorIsOpen, _i, _a, window_1, title, listOfPositionInDocument, randomColumnPosition;
-        return __generator(this, function (_b) {
-            switch (_b.label) {
+        var illustratorIsOpen, printingProcess, allWindowsOpen, arrayOfCuttingMasterPluginWindow, _i, arrayOfCuttingMasterPluginWindow_1, cuttingMasterPluginWindow;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
                 case 0: return [4 /*yield*/, openIllustrator_1.default()];
                 case 1:
-                    illustratorIsOpen = _b.sent();
+                    illustratorIsOpen = _a.sent();
                     printInfo_1.default("illustrator is open: ", illustratorIsOpen);
-                    if (illustratorIsOpen) {
-                        for (_i = 0, _a = main_1.getAllWindow(); _i < _a.length; _i++) {
-                            window_1 = _a[_i];
-                            title = window_1.getTitle();
-                            if (stringConain_1.default(title, "Adobe Illustrator")) {
-                                if (stringConain_1.default(title, "erreur")) {
-                                    closeWindow_1.default({
-                                        window: window_1,
-                                        defaultWindowPosition: INITIAL_WINDOW_POSITION,
-                                    });
-                                }
-                            }
-                            else if (stringConain_1.default(title, "DL-MODEL.ai")) {
-                                window_1.bringToTop();
-                                main_1.setWindowPositionAndSize({
-                                    window: window_1,
-                                    position: {
-                                        x: INITIAL_WINDOW_POSITION.x,
-                                        y: INITIAL_WINDOW_POSITION.y,
-                                        height: INITIAL_WINDOW_SIZE.height,
-                                        width: INITIAL_WINDOW_SIZE.width,
-                                    }
-                                });
-                                listOfPositionInDocument = [
-                                    1.311,
-                                    22.3462,
-                                    43.3403,
-                                    64.2818,
-                                    85.2425,
-                                ];
-                                randomColumnPosition = listOfPositionInDocument[Math.floor(Math.random() * listOfPositionInDocument.length)];
-                                illustratorProces_1.default({
-                                    poem: "coucou\nnouveau poeme",
-                                    contraste: 55,
-                                    graisse: 10000,
-                                    rigidite: -10,
-                                    yPositionInDocument: randomColumnPosition
-                                });
-                                cuterMasterProcess_1.default();
-                            }
-                        }
+                    if (!illustratorIsOpen) return [3 /*break*/, 6];
+                    printingProcess = void 0;
+                    allWindowsOpen = main_1.getAllWindow();
+                    arrayOfCuttingMasterPluginWindow = getWindowInWindowsInstanceByTitle_1.default(allWindowsOpen, CUTTING_MASTER_CUTTING_PLUGIN_WINDOW_NAME);
+                    printInfo_1.default('cutting master plugin windows find: ', arrayOfCuttingMasterPluginWindow);
+                    if (!(arrayOfCuttingMasterPluginWindow.length > 0)) return [3 /*break*/, 3];
+                    for (_i = 0, arrayOfCuttingMasterPluginWindow_1 = arrayOfCuttingMasterPluginWindow; _i < arrayOfCuttingMasterPluginWindow_1.length; _i++) {
+                        cuttingMasterPluginWindow = arrayOfCuttingMasterPluginWindow_1[_i];
+                        process.kill(cuttingMasterPluginWindow.processId);
                     }
-                    return [2 /*return*/];
+                    return [4 /*yield*/, lunchPrintingProcess_1.default(allWindowsOpen)];
+                case 2:
+                    printingProcess = _a.sent();
+                    return [3 /*break*/, 5];
+                case 3: return [4 /*yield*/, lunchPrintingProcess_1.default(allWindowsOpen)];
+                case 4:
+                    printingProcess = _a.sent();
+                    _a.label = 5;
+                case 5:
+                    if (printingProcess) {
+                        printInfo_1.default("document printing with success!");
+                    }
+                    else {
+                        printInfo_1.default("ERROR: ");
+                        console.error("document can't be printing… =(");
+                    }
+                    return [3 /*break*/, 7];
+                case 6:
+                    console.error("check illustrator opening failed");
+                    _a.label = 7;
+                case 7: return [2 /*return*/];
             }
         });
     });

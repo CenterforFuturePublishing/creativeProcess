@@ -3,10 +3,14 @@ import * as robotJS from "robotjs"
 import {getActiveWindowInfo} from "../windowManager/main"
 import printInfo from "../_tools/printInfo"
 
+const TIME_TO_WAIT_FOR_CUTTING_MASTER = 10_000
+
 export default async function() {
   const cuttingMasterWindow = await lunchCuttingMasterFromIllustrator()
 
   console.info("=====", cuttingMasterWindow, "-----")
+
+  return cuttingMasterWindow
 }
 
 async function lunchCuttingMasterFromIllustrator(): Promise<null | Window> {
@@ -28,7 +32,7 @@ async function lunchCuttingMasterFromIllustrator(): Promise<null | Window> {
 
     setTimeout(() => {
       resolve( window )
-    }, 30_000)
+    }, TIME_TO_WAIT_FOR_CUTTING_MASTER)
   })
 }
 
@@ -43,7 +47,7 @@ function openIllustratorMenu_fichier_cuttingMaster() {
 }
 
 function openIllustratorMenu_fichier_cuttingMaster_lunchCUtingMaster() {
-  robotJS.moveMouseSmooth(550, 550, 50)
+  robotJS.moveMouseSmooth(550, 550, 5)
 
   robotJS.mouseClick()
 }

@@ -41,6 +41,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var child_process_1 = __importDefault(require("child_process"));
 var path_1 = __importDefault(require("path"));
+var printInfo_1 = __importDefault(require("../_tools/printInfo"));
 function default_1() {
     return __awaiter(this, void 0, void 0, function () {
         var ILLUSTRATOR_APPLICATION_PATH, TIME_TO_WAIT_FOR_USE_ILLUSTRATOR_APP, ILLUSTRATOR_MODEL_FILE_PATH;
@@ -49,7 +50,7 @@ function default_1() {
             TIME_TO_WAIT_FOR_USE_ILLUSTRATOR_APP = 1000;
             ILLUSTRATOR_MODEL_FILE_PATH = path_1.default.resolve("resources/DL-MODEL.ai");
             return [2 /*return*/, new Promise(function (resolve) {
-                    console.log("open " + ILLUSTRATOR_MODEL_FILE_PATH + " -a " + ILLUSTRATOR_APPLICATION_PATH);
+                    printInfo_1.default("open " + ILLUSTRATOR_MODEL_FILE_PATH + " -a " + ILLUSTRATOR_APPLICATION_PATH);
                     child_process_1.default.exec("open " + ILLUSTRATOR_MODEL_FILE_PATH + " -a " + ILLUSTRATOR_APPLICATION_PATH, function (error, stdout, stderr) {
                         setTimeout(function () {
                             if (error) {
