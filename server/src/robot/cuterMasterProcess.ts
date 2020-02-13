@@ -8,6 +8,8 @@ import {CUTTING_MASTER_CUTTING_PLUGIN_WINDOW_NAME, DEFAULT_MOUSE_DELAY} from "./
 const TIME_TO_WAIT_FOR_CUTTING_MASTER = 20_000 // <-- ok
 // const TIME_TO_WAIT_FOR_CUTTING_MASTER = 60_000 // <-- secure
 
+const TIME_TO_WAIT_FOR_CLOSE_PLUGIN = 5_000
+
 export default async function(): Promise<boolean> {
   const cuttingMasterPluginIsLunch = await lunchCuttingMasterPluginFromIllustrator()
 
@@ -37,6 +39,8 @@ export default async function(): Promise<boolean> {
         robotJS.moveMouseSmooth(buttonPosition_send.x, buttonPosition_send.y, 5)
 
         robotJS.mouseClick()
+
+        robotJS.setMouseDelay(TIME_TO_WAIT_FOR_CLOSE_PLUGIN)
 
         robotJS.moveMouseSmooth(buttonPosition_close.x, buttonPosition_close.y, 5)
 

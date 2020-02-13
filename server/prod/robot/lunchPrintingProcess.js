@@ -46,7 +46,7 @@ var illustratorProces_1 = __importDefault(require("./illustratorProces"));
 var cuterMasterProcess_1 = __importDefault(require("./cuterMasterProcess"));
 var main_2 = require("./main");
 var printInfo_1 = __importDefault(require("../_tools/printInfo"));
-function default_1(allWindowsOpen) {
+function default_1(allWindowsOpen, poemData) {
     return __awaiter(this, void 0, void 0, function () {
         var _i, allWindowsOpen_1, window_1, title, listOfPositionInDocument, randomColumnPosition, cuttingMasterProcess;
         return __generator(this, function (_a) {
@@ -87,11 +87,11 @@ function default_1(allWindowsOpen) {
                     ];
                     randomColumnPosition = listOfPositionInDocument[Math.floor(Math.random() * listOfPositionInDocument.length)];
                     illustratorProces_1.default({
-                        poem: "coucou\nnouveau poeme",
-                        contraste: 55,
-                        graisse: 10000,
-                        rigidite: -10,
-                        yPositionInDocument: randomColumnPosition
+                        contraste: poemData.contraste,
+                        graisse: poemData.graisse,
+                        poem: poemData.poem,
+                        rigidite: poemData.rigidite,
+                        yPositionInDocument: randomColumnPosition,
                     });
                     return [4 /*yield*/, cuterMasterProcess_1.default()];
                 case 3:

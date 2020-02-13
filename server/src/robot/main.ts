@@ -4,6 +4,7 @@ import printInfo from "../_tools/printInfo"
 import {getAllWindow} from "../windowManager/main"
 import getWindowInWindowsInstanceByTitle from "../windowManager/getWindowInWindowsInstanceByTitle"
 import lunchPrintingProcess from "./lunchPrintingProcess"
+import {IDocumentData} from "./illustratorProces"
 
 /**
  * parameters
@@ -29,7 +30,7 @@ export const INITIAL_WINDOW_SIZE     = {
 
 robotJS.setMouseDelay(DEFAULT_MOUSE_DELAY)
 
-async function main() {
+async function main(poemData: IPoemData) {
   const illustratorIsOpen = await openIllustrator()
   printInfo("illustrator is open: ", illustratorIsOpen)
 
@@ -48,10 +49,10 @@ async function main() {
         process.kill(cuttingMasterPluginWindow.processId)
       }
 
-      printingProcess = await lunchPrintingProcess(allWindowsOpen)
+      printingProcess = await lunchPrintingProcess(allWindowsOpen, poemData)
 
     } else {
-      printingProcess = await lunchPrintingProcess(allWindowsOpen)
+      printingProcess = await lunchPrintingProcess(allWindowsOpen, poemData)
     }
 
     if(printingProcess) {
@@ -66,4 +67,9 @@ async function main() {
   }
 }
 
-main()
+main({
+  poem: "coucou\nnouveau poeme",
+  contraste: 100,
+  graisse: 50,
+  rigidite: 10,
+})

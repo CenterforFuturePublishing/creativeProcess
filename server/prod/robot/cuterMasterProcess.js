@@ -53,6 +53,7 @@ var main_2 = require("./main");
 // const TIME_TO_WAIT_FOR_CUTTING_MASTER = 8_000 // <-- crash
 var TIME_TO_WAIT_FOR_CUTTING_MASTER = 20000; // <-- ok
 // const TIME_TO_WAIT_FOR_CUTTING_MASTER = 60_000 // <-- secure
+var TIME_TO_WAIT_FOR_CLOSE_PLUGIN = 5000;
 function default_1() {
     return __awaiter(this, void 0, void 0, function () {
         var cuttingMasterPluginIsLunch, activeWindow, rightOfCuttingMasterPluginWindow, bottomOfCuttingMasterPluginWindow, buttonPosition_send, buttonPosition_close;
@@ -78,6 +79,7 @@ function default_1() {
                                 robotJS.setMouseDelay(1000);
                                 robotJS.moveMouseSmooth(buttonPosition_send.x, buttonPosition_send.y, 5);
                                 robotJS.mouseClick();
+                                robotJS.setMouseDelay(TIME_TO_WAIT_FOR_CLOSE_PLUGIN);
                                 robotJS.moveMouseSmooth(buttonPosition_close.x, buttonPosition_close.y, 5);
                                 robotJS.mouseClick();
                                 robotJS.setMouseDelay(main_2.DEFAULT_MOUSE_DELAY);

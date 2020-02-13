@@ -67,7 +67,7 @@ exports.INITIAL_WINDOW_SIZE = {
 };
 /***/
 robotJS.setMouseDelay(exports.DEFAULT_MOUSE_DELAY);
-function main() {
+function main(poemData) {
     return __awaiter(this, void 0, void 0, function () {
         var illustratorIsOpen, printingProcess, allWindowsOpen, arrayOfCuttingMasterPluginWindow, _i, arrayOfCuttingMasterPluginWindow_1, cuttingMasterPluginWindow;
         return __generator(this, function (_a) {
@@ -86,11 +86,11 @@ function main() {
                         cuttingMasterPluginWindow = arrayOfCuttingMasterPluginWindow_1[_i];
                         process.kill(cuttingMasterPluginWindow.processId);
                     }
-                    return [4 /*yield*/, lunchPrintingProcess_1.default(allWindowsOpen)];
+                    return [4 /*yield*/, lunchPrintingProcess_1.default(allWindowsOpen, poemData)];
                 case 2:
                     printingProcess = _a.sent();
                     return [3 /*break*/, 5];
-                case 3: return [4 /*yield*/, lunchPrintingProcess_1.default(allWindowsOpen)];
+                case 3: return [4 /*yield*/, lunchPrintingProcess_1.default(allWindowsOpen, poemData)];
                 case 4:
                     printingProcess = _a.sent();
                     _a.label = 5;
@@ -111,4 +111,9 @@ function main() {
         });
     });
 }
-main();
+main({
+    poem: "coucou\nnouveau poeme",
+    contraste: 100,
+    graisse: 50,
+    rigidite: 10,
+});

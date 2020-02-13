@@ -4,13 +4,11 @@ import {getActiveWindowInfo} from "../windowManager/main"
 import {Window} from "node-window-manager"
 import printInfo from "../_tools/printInfo"
 
-export default function ({poem, graisse, contraste, rigidite, yPositionInDocument}: {
-  poem: string
-  graisse: number
-  contraste: number
-  rigidite: number
+export interface IDocumentData extends IPoemData {
   yPositionInDocument: number
-}) {
+}
+
+export default function ({poem, graisse, contraste, rigidite, yPositionInDocument}: IDocumentData) {
 
   robotJS.setMouseDelay(DEFAULT_MOUSE_DELAY)
   robotJS.setKeyboardDelay(500)
