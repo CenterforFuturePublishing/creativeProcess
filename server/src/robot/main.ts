@@ -30,7 +30,7 @@ export const INITIAL_WINDOW_SIZE     = {
 
 robotJS.setMouseDelay(DEFAULT_MOUSE_DELAY)
 
-async function main(poemData: IPoemData) {
+export async function main(poemData: IPoemData) {
   const illustratorIsOpen = await openIllustrator()
   printInfo("illustrator is open: ", illustratorIsOpen)
 
@@ -67,9 +67,9 @@ async function main(poemData: IPoemData) {
   }
 }
 
-main({
-  poem: "coucou\nnouveau poeme",
-  contraste: 100,
-  graisse: 50,
-  rigidite: 10,
-})
+// main({
+//   poem: "coucou\nnouveau poeme",
+//   contraste: 100,
+//   graisse: 50,
+//   rigidite: 10,
+// })

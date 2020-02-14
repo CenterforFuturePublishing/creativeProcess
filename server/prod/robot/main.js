@@ -111,9 +111,10 @@ function main(poemData) {
         });
     });
 }
-main({
-    poem: "coucou\nnouveau poeme",
-    contraste: 100,
-    graisse: 50,
-    rigidite: 10,
-});
+exports.main = main;
+// main({
+//   poem: "coucou\nnouveau poeme",
+//   contraste: 100,
+//   graisse: 50,
+//   rigidite: 10,
+// })

@@ -1,4 +1,5 @@
 import express from "express"
+import {main} from "./robot/main"
 
 export class Server {
 
@@ -25,6 +26,22 @@ export class Server {
       console.log(req.body)
 
       res.send({ status: 'SUCCESS'})
+
+      const jsonData: IPoemData = {
+        poem:       req.body.poem,
+        graisse:    req.body.graisse,
+        contraste:  req.body.contraste,
+        rigidite:   req.body.rigidite,
+      }
+
+      try {
+        main(jsonData).then(() => {
+          console.log("doc printing!")
+        })
+      } catch (e) {
+        console.error("can't prining document")
+      }
+
     })
 
     this._app.listen(3000, () => {
