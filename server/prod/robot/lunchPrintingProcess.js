@@ -91,7 +91,7 @@ function default_1(allWindowsOpen, poemData) {
                         graisse: poemData.graisse,
                         poem: poemData.poem,
                         rigidite: poemData.rigidite,
-                        yPositionInDocument: randomColumnPosition,
+                        xPositionInDocument: randomColumnPosition,
                     });
                     return [4 /*yield*/, cuterMasterProcess_1.default()];
                 case 3:

@@ -54,7 +54,7 @@ export default async function (allWindowsOpen: Window[], poemData: IPoemData): P
         graisse:    poemData.graisse,
         poem:       poemData.poem,
         rigidite:   poemData.rigidite,
-        yPositionInDocument: randomColumnPosition,
+        xPositionInDocument: randomColumnPosition,
       })
 
       const cuttingMasterProcess = await cuterMasterProcess()

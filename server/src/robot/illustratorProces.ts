@@ -5,10 +5,10 @@ import {Window} from "node-window-manager"
 import printInfo from "../_tools/printInfo"
 
 export interface IDocumentData extends IPoemData {
-  yPositionInDocument: number
+  xPositionInDocument: number
 }
 
-export default function ({poem, graisse, contraste, rigidite, yPositionInDocument}: IDocumentData) {
+export default function ({poem, graisse, contraste, rigidite, xPositionInDocument}: IDocumentData) {
 
   robotJS.setMouseDelay(DEFAULT_MOUSE_DELAY)
   robotJS.setKeyboardDelay(500)
@@ -47,7 +47,7 @@ export default function ({poem, graisse, contraste, rigidite, yPositionInDocumen
         y: 50,
       },
       panelWindow: positionPanelWindow,
-      stringToEnter: `${yPositionInDocument}cm`,
+      stringToEnter: `${xPositionInDocument}cm`,
     })
 
     // set y position
@@ -126,6 +126,8 @@ export default function ({poem, graisse, contraste, rigidite, yPositionInDocumen
     robotJS.typeStringDelayed(`${rigidite}`, 2000)
 
     robotJS.keyTap("enter")
+
+    robotJS.keyTap("a", ["command", "shift"])
   }
 
 }

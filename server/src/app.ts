@@ -1,11 +1,10 @@
 import express from "express"
-import {main} from "./robot/main"
 
 export class Server {
 
   private _app = express()
 
-  constructor() {
+  constructor(onPostRequest: (jsonData: IPoemData)=>void) {
 
     this._app.use(express.json())
 
@@ -21,7 +20,7 @@ export class Server {
 
       const date = new Date()
 
-      console.log("connection at : ", date.getHours(), " : ", date.getMinutes(), " : ", date.getSeconds())
+      console.log("connection at : ", date.getDay(), " / ",date.getMonth(), " | ", date.getHours(), " : ", date.getMinutes(), " : ", date.getSeconds())
 
       console.log(req.body)
 
@@ -34,13 +33,7 @@ export class Server {
         rigidite:   req.body.rigidite,
       }
 
-      try {
-        main(jsonData).then(() => {
-          console.log("doc printing!")
-        })
-      } catch (e) {
-        console.error("can't prining document")
-      }
+      onPostRequest(jsonData)
 
     })
 

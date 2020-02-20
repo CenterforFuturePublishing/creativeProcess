@@ -15,7 +15,7 @@ var main_1 = require("./main");
 var main_2 = require("../windowManager/main");
 var printInfo_1 = __importDefault(require("../_tools/printInfo"));
 function default_1(_a) {
-    var poem = _a.poem, graisse = _a.graisse, contraste = _a.contraste, rigidite = _a.rigidite, yPositionInDocument = _a.yPositionInDocument;
+    var poem = _a.poem, graisse = _a.graisse, contraste = _a.contraste, rigidite = _a.rigidite, xPositionInDocument = _a.xPositionInDocument;
     robotJS.setMouseDelay(main_1.DEFAULT_MOUSE_DELAY);
     robotJS.setKeyboardDelay(500);
     robotJS.moveMouseSmooth(250, 250, 1);
@@ -40,7 +40,7 @@ function default_1(_a) {
                 y: 50,
             },
             panelWindow: positionPanelWindow,
-            stringToEnter: yPositionInDocument + "cm",
+            stringToEnter: xPositionInDocument + "cm",
         });
         // set y position
         setValueOfInputString({
@@ -109,6 +109,7 @@ function default_1(_a) {
         robotJS.keyTap("tab");
         robotJS.typeStringDelayed("" + rigidite, 2000);
         robotJS.keyTap("enter");
+        robotJS.keyTap("a", ["command", "shift"]);
     }
 }
 exports.default = default_1;
