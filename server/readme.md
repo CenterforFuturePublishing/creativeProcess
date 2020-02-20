@@ -14,6 +14,6 @@ poem
 ```bash
 curl    --header "Content-Type: application/json" \
         --request POST \
-        --data '{"username":"xyz","password":"xyz"}' \
+        --data '{"poem": "coucou poem tèste\nretour de ligne","graisse": 30,"contraste": 50,"rigidite": 0}' \
         http://localhost:3000/api/poem
 ```
