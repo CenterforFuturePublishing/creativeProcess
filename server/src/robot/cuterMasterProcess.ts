@@ -49,7 +49,7 @@ export default async function(): Promise<boolean> {
         robotJS.setMouseDelay(DEFAULT_MOUSE_DELAY)
 
         console.log("getActiveWindowInfo()")
-        console.log(getActiveWindowInfo())
+        console.log(getActiveWindowInfo()) // todo: create external process
 
         return true
 
