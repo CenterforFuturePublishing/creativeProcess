@@ -55,7 +55,7 @@ function default_1(allWindowsOpen, poemData) {
                     _i = 0, allWindowsOpen_1 = allWindowsOpen;
                     _a.label = 1;
                 case 1:
-                    if (!(_i < allWindowsOpen_1.length)) return [3 /*break*/, 5];
+                    if (!(_i < allWindowsOpen_1.length)) return [3 /*break*/, 6];
                     window_1 = allWindowsOpen_1[_i];
                     title = window_1.getTitle();
                     if (!stringConain_1.default(title, "Adobe Illustrator")) return [3 /*break*/, 2];
@@ -67,7 +67,7 @@ function default_1(allWindowsOpen, poemData) {
                     }
                     return [2 /*return*/, false];
                 case 2:
-                    if (!stringConain_1.default(title, "DL-MODEL.ai")) return [3 /*break*/, 4];
+                    if (!stringConain_1.default(title, "DL-MODEL.ai")) return [3 /*break*/, 5];
                     window_1.bringToTop();
                     main_1.setWindowPositionAndSize({
                         window: window_1,
@@ -86,21 +86,23 @@ function default_1(allWindowsOpen, poemData) {
                         85.2425,
                     ];
                     randomColumnPosition = listOfPositionInDocument[Math.floor(Math.random() * listOfPositionInDocument.length)];
-                    illustratorProces_1.default({
-                        contraste: poemData.contraste,
-                        graisse: poemData.graisse,
-                        poem: poemData.poem,
-                        rigidite: poemData.rigidite,
-                        xPositionInDocument: randomColumnPosition,
-                    });
-                    return [4 /*yield*/, cuterMasterProcess_1.default()];
+                    return [4 /*yield*/, illustratorProces_1.default({
+                            contraste: poemData.contraste,
+                            graisse: poemData.graisse,
+                            poem: poemData.poem,
+                            rigidite: poemData.rigidite,
+                            xPositionInDocument: randomColumnPosition,
+                        })];
                 case 3:
+                    _a.sent();
+                    return [4 /*yield*/, cuterMasterProcess_1.default()];
+                case 4:
                     cuttingMasterProcess = _a.sent();
                     return [2 /*return*/, cuttingMasterProcess];
-                case 4:
+                case 5:
                     _i++;
                     return [3 /*break*/, 1];
-                case 5:
+                case 6:
                     printInfo_1.default("ERROR: ");
                     console.error("0 window open");
                     return [2 /*return*/, false];

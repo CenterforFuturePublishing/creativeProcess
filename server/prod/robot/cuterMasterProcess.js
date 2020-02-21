@@ -84,7 +84,7 @@ function default_1() {
                                 robotJS.mouseClick();
                                 robotJS.setMouseDelay(main_2.DEFAULT_MOUSE_DELAY);
                                 console.log("getActiveWindowInfo()");
-                                console.log(main_1.getActiveWindowInfo());
+                                console.log(main_1.getActiveWindowInfo()); // todo: create external process
                                 return [2 /*return*/, true];
                             }
                             catch (e) {

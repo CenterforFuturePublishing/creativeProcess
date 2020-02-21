@@ -49,7 +49,7 @@ export default async function (allWindowsOpen: Window[], poemData: IPoemData): P
 
       const randomColumnPosition = listOfPositionInDocument[Math.floor(Math.random() * listOfPositionInDocument.length)]
 
-      illustratorLayoutProces({
+      await illustratorLayoutProces({
         contraste:  poemData.contraste,
         graisse:    poemData.graisse,
         poem:       poemData.poem,

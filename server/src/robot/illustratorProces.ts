@@ -8,7 +8,7 @@ export interface IDocumentData extends IPoemData {
   xPositionInDocument: number
 }
 
-export default function ({poem, graisse, contraste, rigidite, xPositionInDocument}: IDocumentData) {
+export default async function ({poem, graisse, contraste, rigidite, xPositionInDocument}: IDocumentData): Promise<boolean> {
 
   robotJS.setMouseDelay(DEFAULT_MOUSE_DELAY)
   robotJS.setKeyboardDelay(500)
@@ -26,117 +26,119 @@ export default function ({poem, graisse, contraste, rigidite, xPositionInDocumen
 
   robotJS.mouseClick()
 
-  robotJS.typeStringDelayed(poem, 1000)
+  robotJS.typeString(poem)
 
-  robotJS.keyTap("escape")
+  return new Promise(resolve => {
 
-  robotJS.typeString("v")
+    setTimeout(async () => {
+      robotJS.keyTap("escape")
+
+      robotJS.typeString("v")
 
 
-  // set caractere params
-  const caracterPanel = openCaracterePanel()
+      // set caractere params
+      const caracterPanel = openCaracterePanel()
 
-  printInfo("caracterPanel: ", caracterPanel)
+      printInfo("caracterPanel: ", caracterPanel)
 
-  if (caracterPanel) {
+      if (caracterPanel) {
 
-    // familly name
-    setValueOfInputString({
-      inputPositionRelativeOfPanel: {
-        x: 85,
-        y: 77,
-      },
-      panelWindow: caracterPanel,
-      stringToEnter: "DL-08",
-    })
+        // familly name
+        setValueOfInputString({
+          inputPositionRelativeOfPanel: {
+            x: 85,
+            y: 77,
+          },
+          panelWindow: caracterPanel,
+          stringToEnter: "DL-08",
+        })
 
-    // font -size
-    setValueOfInputString({
-      inputPositionRelativeOfPanel: {
-        x: 65,
-        y: 137,
-      },
-      panelWindow: caracterPanel,
-      stringToEnter: "22pt",
-    })
+        // font -size
+        setValueOfInputString({
+          inputPositionRelativeOfPanel: {
+            x: 65,
+            y: 137,
+          },
+          panelWindow: caracterPanel,
+          stringToEnter: "22pt",
+        })
 
-    // line-height
-    setValueOfInputString({
-      inputPositionRelativeOfPanel: {
-        x: 195,
-        y: 137,
-      },
-      panelWindow: caracterPanel,
-      stringToEnter: "25pt",
-    })
+        // line-height
+        setValueOfInputString({
+          inputPositionRelativeOfPanel: {
+            x: 195,
+            y: 137,
+          },
+          panelWindow: caracterPanel,
+          stringToEnter: "25pt",
+        })
 
-    //=====
-    // font variable value
-    //=====
-    clickAtPositionRelativeToAWindow({
-      panelWindow: caracterPanel,
-      inputPositionRelativeOfPanel: {
-        x: 228,
-        y: 104,
+        //=====
+        // font variable value
+        //=====
+        clickAtPositionRelativeToAWindow({
+          panelWindow: caracterPanel,
+          inputPositionRelativeOfPanel: {
+            x: 228,
+            y: 104,
+          }
+        })
+
+        // épaisseur
+        if (graisse < 0 || graisse > 100) graisse = 0
+        robotJS.keyTap("tab")
+        robotJS.typeStringDelayed(`${graisse}`, 2000)
+
+        // contrast
+        if (contraste < 0 || contraste > 100) contraste = 0
+        robotJS.keyTap("tab")
+        robotJS.typeStringDelayed(`${contraste}`, 2000)
+
+        // rigidité
+        if (rigidite < 0 || rigidite > 100) rigidite = 0
+        robotJS.keyTap("tab")
+        robotJS.typeStringDelayed(`${rigidite}`, 2000)
+
+        robotJS.keyTap("enter")
+
+        robotJS.keyTap("a", ["command", "shift"])
       }
-    })
 
-    // épaisseur
-    if(graisse < 0 || graisse > 100) graisse = 0
-    robotJS.keyTap("tab")
-    robotJS.typeStringDelayed(`${graisse}`, 2000)
+      // set position of text
+      const positionPanelWindow = openTransformationPanel()
 
-    // contrast
-    if(contraste < 0 || contraste > 100) contraste = 0
-    robotJS.keyTap("tab")
-    robotJS.typeStringDelayed(`${contraste}`, 2000)
+      printInfo("positionPanelWindow: ", positionPanelWindow)
 
-    // rigidité
-    if(rigidite < 0 || rigidite > 100) rigidite = 0
-    robotJS.keyTap("tab")
-    robotJS.typeStringDelayed(`${rigidite}`, 2000)
+      if (positionPanelWindow) {
 
-    robotJS.keyTap("enter")
+        // set x position
+        setValueOfInputString({
+          inputPositionRelativeOfPanel: {
+            x: 75,
+            y: 50,
+          },
+          panelWindow: positionPanelWindow,
+          stringToEnter: `${xPositionInDocument}cm`,
+        })
 
-    robotJS.keyTap("a", ["command", "shift"])
-  }
+        // set y position
+        setValueOfInputString({
+          inputPositionRelativeOfPanel: {
+            x: 75,
+            y: 75,
+          },
+          panelWindow: positionPanelWindow,
+          stringToEnter: "0cm",
+        })
 
-  // set position of text
-  const positionPanelWindow = openTransformationPanel()
+      }
 
-  printInfo("positionPanelWindow: ", positionPanelWindow)
+      resolve(true)
+    }, 100)
 
-  if (positionPanelWindow) {
-
-    // set x position
-    setValueOfInputString({
-      inputPositionRelativeOfPanel: {
-        x: 75,
-        y: 50,
-      },
-      panelWindow: positionPanelWindow,
-      stringToEnter: `${xPositionInDocument}cm`,
-    })
-
-    // set y position
-    setValueOfInputString({
-      inputPositionRelativeOfPanel: {
-        x: 75,
-        y: 75,
-      },
-      panelWindow: positionPanelWindow,
-      stringToEnter: "0cm",
-    })
-
-  }
+  })
 
 }
-
-
-
-
-
-
 
 
 function minimalCheckForIllustratorPanelIsOpen(activeWindow: Window): boolean {
@@ -211,14 +213,14 @@ function setValueOfInputString({
   robotJS.keyToggle("a", "up")
   robotJS.keyToggle("command", "up")
 
-  if(stringPast) {
+  if (stringPast) {
     robotJS.typeString(stringToEnter)
   } else {
     robotJS.typeStringDelayed(stringToEnter, stringTypingSpeed)
   }
 
 
-  if(validate) robotJS.keyTap("enter")
+  if (validate) robotJS.keyTap("enter")
 }
 
 interface IClickAtPositionRelativeToAWindowParams {
