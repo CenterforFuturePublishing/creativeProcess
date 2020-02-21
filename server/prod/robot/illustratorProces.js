@@ -29,29 +29,6 @@ function default_1(_a) {
     robotJS.typeStringDelayed(poem, 1000);
     robotJS.keyTap("escape");
     robotJS.typeString("v");
-    // set position of text
-    var positionPanelWindow = openTransformationPanel();
-    printInfo_1.default("positionPanelWindow: ", positionPanelWindow);
-    if (positionPanelWindow) {
-        // set x position
-        setValueOfInputString({
-            inputPositionRelativeOfPanel: {
-                x: 75,
-                y: 50,
-            },
-            panelWindow: positionPanelWindow,
-            stringToEnter: xPositionInDocument + "cm",
-        });
-        // set y position
-        setValueOfInputString({
-            inputPositionRelativeOfPanel: {
-                x: 75,
-                y: 75,
-            },
-            panelWindow: positionPanelWindow,
-            stringToEnter: "0cm",
-        });
-    }
     // set caractere params
     var caracterPanel = openCaracterePanel();
     printInfo_1.default("caracterPanel: ", caracterPanel);
@@ -110,6 +87,29 @@ function default_1(_a) {
         robotJS.typeStringDelayed("" + rigidite, 2000);
         robotJS.keyTap("enter");
         robotJS.keyTap("a", ["command", "shift"]);
+    }
+    // set position of text
+    var positionPanelWindow = openTransformationPanel();
+    printInfo_1.default("positionPanelWindow: ", positionPanelWindow);
+    if (positionPanelWindow) {
+        // set x position
+        setValueOfInputString({
+            inputPositionRelativeOfPanel: {
+                x: 75,
+                y: 50,
+            },
+            panelWindow: positionPanelWindow,
+            stringToEnter: xPositionInDocument + "cm",
+        });
+        // set y position
+        setValueOfInputString({
+            inputPositionRelativeOfPanel: {
+                x: 75,
+                y: 75,
+            },
+            panelWindow: positionPanelWindow,
+            stringToEnter: "0cm",
+        });
     }
 }
 exports.default = default_1;

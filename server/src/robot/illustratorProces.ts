@@ -33,35 +33,6 @@ export default function ({poem, graisse, contraste, rigidite, xPositionInDocumen
   robotJS.typeString("v")
 
 
-  // set position of text
-  const positionPanelWindow = openTransformationPanel()
-
-  printInfo("positionPanelWindow: ", positionPanelWindow)
-
-  if (positionPanelWindow) {
-
-    // set x position
-    setValueOfInputString({
-      inputPositionRelativeOfPanel: {
-        x: 75,
-        y: 50,
-      },
-      panelWindow: positionPanelWindow,
-      stringToEnter: `${xPositionInDocument}cm`,
-    })
-
-    // set y position
-    setValueOfInputString({
-      inputPositionRelativeOfPanel: {
-        x: 75,
-        y: 75,
-      },
-      panelWindow: positionPanelWindow,
-      stringToEnter: "0cm",
-    })
-
-  }
-
   // set caractere params
   const caracterPanel = openCaracterePanel()
 
@@ -128,6 +99,35 @@ export default function ({poem, graisse, contraste, rigidite, xPositionInDocumen
     robotJS.keyTap("enter")
 
     robotJS.keyTap("a", ["command", "shift"])
+  }
+
+  // set position of text
+  const positionPanelWindow = openTransformationPanel()
+
+  printInfo("positionPanelWindow: ", positionPanelWindow)
+
+  if (positionPanelWindow) {
+
+    // set x position
+    setValueOfInputString({
+      inputPositionRelativeOfPanel: {
+        x: 75,
+        y: 50,
+      },
+      panelWindow: positionPanelWindow,
+      stringToEnter: `${xPositionInDocument}cm`,
+    })
+
+    // set y position
+    setValueOfInputString({
+      inputPositionRelativeOfPanel: {
+        x: 75,
+        y: 75,
+      },
+      panelWindow: positionPanelWindow,
+      stringToEnter: "0cm",
+    })
+
   }
 
 }
