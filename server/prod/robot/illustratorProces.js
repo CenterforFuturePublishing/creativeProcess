@@ -128,7 +128,6 @@ function default_1(_a) {
                                 robotJS.keyTap("tab");
                                 robotJS.typeStringDelayed("" + rigidite, 2000);
                                 robotJS.keyTap("enter");
-                                robotJS.keyTap("a", ["command", "shift"]);
                             }
                             positionPanelWindow = openTransformationPanel();
                             printInfo_1.default("positionPanelWindow: ", positionPanelWindow);
@@ -152,6 +151,8 @@ function default_1(_a) {
                                     stringToEnter: "0cm",
                                 });
                             }
+                            // unselect all
+                            robotJS.keyTap("a", ["command", "shift"]);
                             resolve(true);
                             return [2 /*return*/];
                         });

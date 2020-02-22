@@ -100,8 +100,6 @@ export default async function ({poem, graisse, contraste, rigidite, xPositionInD
         robotJS.typeStringDelayed(`${rigidite}`, 2000)
 
         robotJS.keyTap("enter")
-
-        robotJS.keyTap("a", ["command", "shift"])
       }
 
       // set position of text
@@ -132,6 +130,9 @@ export default async function ({poem, graisse, contraste, rigidite, xPositionInD
         })
 
       }
+
+      // unselect all
+      robotJS.keyTap("a", ["command", "shift"])
 
       resolve(true)
     }, 100)
