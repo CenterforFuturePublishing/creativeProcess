@@ -1,7 +1,7 @@
 const axios = require('axios')
 
 axios.post('http://localhost:3000/api/poem', {
-    poem: "test très simplé\coucou comment allez vous?",
+    poem: "test très simplé\ncoucou comment allez vous?",
     graisse: 5000,
     contraste: 50,
     rigidite: 25,

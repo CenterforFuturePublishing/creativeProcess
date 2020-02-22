@@ -50,6 +50,7 @@ var robotJS = __importStar(require("robotjs"));
 var main_1 = require("./main");
 var main_2 = require("../windowManager/main");
 var printInfo_1 = __importDefault(require("../_tools/printInfo"));
+var typeStringWithLineBreak_1 = __importDefault(require("./typeStringWithLineBreak"));
 function default_1(_a) {
     var poem = _a.poem, graisse = _a.graisse, contraste = _a.contraste, rigidite = _a.rigidite, xPositionInDocument = _a.xPositionInDocument;
     return __awaiter(this, void 0, void 0, function () {
@@ -65,98 +66,101 @@ function default_1(_a) {
             robotJS.keyTap("delete");
             robotJS.typeString("t");
             robotJS.mouseClick();
-            robotJS.typeString(poem);
             return [2 /*return*/, new Promise(function (resolve) {
-                    setTimeout(function () { return __awaiter(_this, void 0, void 0, function () {
-                        var caracterPanel, positionPanelWindow;
-                        return __generator(this, function (_a) {
-                            robotJS.keyTap("escape");
-                            robotJS.typeString("v");
-                            caracterPanel = openCaracterePanel();
-                            printInfo_1.default("caracterPanel: ", caracterPanel);
-                            if (caracterPanel) {
-                                // familly name
-                                setValueOfInputString({
-                                    inputPositionRelativeOfPanel: {
-                                        x: 85,
-                                        y: 77,
-                                    },
-                                    panelWindow: caracterPanel,
-                                    stringToEnter: "DL-08",
-                                });
-                                // font -size
-                                setValueOfInputString({
-                                    inputPositionRelativeOfPanel: {
-                                        x: 65,
-                                        y: 137,
-                                    },
-                                    panelWindow: caracterPanel,
-                                    stringToEnter: "22pt",
-                                });
-                                // line-height
-                                setValueOfInputString({
-                                    inputPositionRelativeOfPanel: {
-                                        x: 195,
-                                        y: 137,
-                                    },
-                                    panelWindow: caracterPanel,
-                                    stringToEnter: "25pt",
-                                });
-                                //=====
-                                // font variable value
-                                //=====
-                                clickAtPositionRelativeToAWindow({
-                                    panelWindow: caracterPanel,
-                                    inputPositionRelativeOfPanel: {
-                                        x: 228,
-                                        y: 104,
-                                    }
-                                });
-                                // épaisseur
-                                if (graisse < 0 || graisse > 100)
-                                    graisse = 0;
-                                robotJS.keyTap("tab");
-                                robotJS.typeStringDelayed("" + graisse, 2000);
-                                // contrast
-                                if (contraste < 0 || contraste > 100)
-                                    contraste = 0;
-                                robotJS.keyTap("tab");
-                                robotJS.typeStringDelayed("" + contraste, 2000);
-                                // rigidité
-                                if (rigidite < 0 || rigidite > 100)
-                                    rigidite = 0;
-                                robotJS.keyTap("tab");
-                                robotJS.typeStringDelayed("" + rigidite, 2000);
-                                robotJS.keyTap("enter");
-                            }
-                            positionPanelWindow = openTransformationPanel();
-                            printInfo_1.default("positionPanelWindow: ", positionPanelWindow);
-                            if (positionPanelWindow) {
-                                // set x position
-                                setValueOfInputString({
-                                    inputPositionRelativeOfPanel: {
-                                        x: 75,
-                                        y: 50,
-                                    },
-                                    panelWindow: positionPanelWindow,
-                                    stringToEnter: xPositionInDocument + "cm",
-                                });
-                                // set y position
-                                setValueOfInputString({
-                                    inputPositionRelativeOfPanel: {
-                                        x: 75,
-                                        y: 75,
-                                    },
-                                    panelWindow: positionPanelWindow,
-                                    stringToEnter: "0cm",
-                                });
-                            }
-                            // unselect all
-                            robotJS.keyTap("a", ["command", "shift"]);
-                            resolve(true);
-                            return [2 /*return*/];
-                        });
-                    }); }, 100);
+                    // robotJS.typeString(poem)
+                    typeStringWithLineBreak_1.default(poem).then(function () {
+                        console.log("typeStringWithLineBreak end");
+                        setTimeout(function () { return __awaiter(_this, void 0, void 0, function () {
+                            var caracterPanel, positionPanelWindow;
+                            return __generator(this, function (_a) {
+                                robotJS.keyTap("escape");
+                                robotJS.typeString("v");
+                                caracterPanel = openCaracterePanel();
+                                printInfo_1.default("caracterPanel: ", caracterPanel);
+                                if (caracterPanel) {
+                                    // familly name
+                                    setValueOfInputString({
+                                        inputPositionRelativeOfPanel: {
+                                            x: 85,
+                                            y: 77,
+                                        },
+                                        panelWindow: caracterPanel,
+                                        stringToEnter: "DL-08",
+                                    });
+                                    // font -size
+                                    setValueOfInputString({
+                                        inputPositionRelativeOfPanel: {
+                                            x: 65,
+                                            y: 137,
+                                        },
+                                        panelWindow: caracterPanel,
+                                        stringToEnter: "22pt",
+                                    });
+                                    // line-height
+                                    setValueOfInputString({
+                                        inputPositionRelativeOfPanel: {
+                                            x: 195,
+                                            y: 137,
+                                        },
+                                        panelWindow: caracterPanel,
+                                        stringToEnter: "25pt",
+                                    });
+                                    //=====
+                                    // font variable value
+                                    //=====
+                                    clickAtPositionRelativeToAWindow({
+                                        panelWindow: caracterPanel,
+                                        inputPositionRelativeOfPanel: {
+                                            x: 228,
+                                            y: 104,
+                                        }
+                                    });
+                                    // épaisseur
+                                    if (graisse < 0 || graisse > 100)
+                                        graisse = 0;
+                                    robotJS.keyTap("tab");
+                                    robotJS.typeStringDelayed("" + graisse, 2000);
+                                    // contrast
+                                    if (contraste < 0 || contraste > 100)
+                                        contraste = 0;
+                                    robotJS.keyTap("tab");
+                                    robotJS.typeStringDelayed("" + contraste, 2000);
+                                    // rigidité
+                                    if (rigidite < 0 || rigidite > 100)
+                                        rigidite = 0;
+                                    robotJS.keyTap("tab");
+                                    robotJS.typeStringDelayed("" + rigidite, 2000);
+                                    robotJS.keyTap("enter");
+                                }
+                                positionPanelWindow = openTransformationPanel();
+                                printInfo_1.default("positionPanelWindow: ", positionPanelWindow);
+                                if (positionPanelWindow) {
+                                    // set x position
+                                    setValueOfInputString({
+                                        inputPositionRelativeOfPanel: {
+                                            x: 75,
+                                            y: 50,
+                                        },
+                                        panelWindow: positionPanelWindow,
+                                        stringToEnter: xPositionInDocument + "cm",
+                                    });
+                                    // set y position
+                                    setValueOfInputString({
+                                        inputPositionRelativeOfPanel: {
+                                            x: 75,
+                                            y: 75,
+                                        },
+                                        panelWindow: positionPanelWindow,
+                                        stringToEnter: "0cm",
+                                    });
+                                }
+                                // unselect all
+                                robotJS.keyTap("a", ["command", "shift"]);
+                                resolve(true);
+                                return [2 /*return*/];
+                            });
+                        }); }, 100);
+                    });
                 })];
         });
     });

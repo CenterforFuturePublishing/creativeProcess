@@ -1,0 +1,29 @@
+{
+  poem: 'De la petite éleve, son fort\n' +
+  "Foule souvenir ; c'est homme. Paygé\n" +
+  'Sur le frège chaudement !\n' +
+  '\n' +
+  "Si d'agonie au lointain qui pourrait qûter\n" +
+  'Ce qout au cre de la terre aux bords prouffond,\n' +
+  'Quand la flûre fait le plus beau!',
+  graisse: 30,
+  contraste: 50,
+  rigidite: 0
+}
+
+
+
+
+{
+  poem: "De la petite éleve, son fort\nFoule souvenir ; c'est homme. Paygé \nSur le frège chaudement !\n\nSi d'agonie au lointain qui pourrait qûter\nCe qout au cre de la terre aux bords prouffond,\nQuand la flûre fait le plus beau!",
+  graisse: 30,
+  contraste: 50,
+  rigidite: 0
+}
+
+{
+  "poem": "De la petite éleve, son fort\nFoule souvenir ; c'est homme. Paygé \nSur le frège chaudement !\n\nSi d'agonie au lointain qui pourrait qûter\nCe qout au cre de la terre aux bords prouffond,\nQuand la flûre fait le plus beau!",
+  "graisse": 30,
+  "contraste": 50,
+  "rigidite": 0
+}

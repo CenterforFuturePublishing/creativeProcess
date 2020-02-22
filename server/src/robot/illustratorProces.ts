@@ -3,6 +3,7 @@ import {DEFAULT_MOUSE_DELAY} from "./main"
 import {getActiveWindowInfo} from "../windowManager/main"
 import {Window} from "node-window-manager"
 import printInfo from "../_tools/printInfo"
+import typeStringWithLineBreak from "./typeStringWithLineBreak"
 
 export interface IDocumentData extends IPoemData {
   xPositionInDocument: number
@@ -26,116 +27,122 @@ export default async function ({poem, graisse, contraste, rigidite, xPositionInD
 
   robotJS.mouseClick()
 
-  robotJS.typeString(poem)
-
   return new Promise(resolve => {
 
-    setTimeout(async () => {
-      robotJS.keyTap("escape")
+  // robotJS.typeString(poem)
+  typeStringWithLineBreak(poem).then(() => {
 
-      robotJS.typeString("v")
+    console.log("typeStringWithLineBreak end")
 
 
-      // set caractere params
-      const caracterPanel = openCaracterePanel()
+      setTimeout(async () => {
+        robotJS.keyTap("escape")
 
-      printInfo("caracterPanel: ", caracterPanel)
+        robotJS.typeString("v")
 
-      if (caracterPanel) {
 
-        // familly name
-        setValueOfInputString({
-          inputPositionRelativeOfPanel: {
-            x: 85,
-            y: 77,
-          },
-          panelWindow: caracterPanel,
-          stringToEnter: "DL-08",
-        })
+        // set caractere params
+        const caracterPanel = openCaracterePanel()
 
-        // font -size
-        setValueOfInputString({
-          inputPositionRelativeOfPanel: {
-            x: 65,
-            y: 137,
-          },
-          panelWindow: caracterPanel,
-          stringToEnter: "22pt",
-        })
+        printInfo("caracterPanel: ", caracterPanel)
 
-        // line-height
-        setValueOfInputString({
-          inputPositionRelativeOfPanel: {
-            x: 195,
-            y: 137,
-          },
-          panelWindow: caracterPanel,
-          stringToEnter: "25pt",
-        })
+        if (caracterPanel) {
 
-        //=====
-        // font variable value
-        //=====
-        clickAtPositionRelativeToAWindow({
-          panelWindow: caracterPanel,
-          inputPositionRelativeOfPanel: {
-            x: 228,
-            y: 104,
-          }
-        })
+          // familly name
+          setValueOfInputString({
+            inputPositionRelativeOfPanel: {
+              x: 85,
+              y: 77,
+            },
+            panelWindow: caracterPanel,
+            stringToEnter: "DL-08",
+          })
 
-        // épaisseur
-        if (graisse < 0 || graisse > 100) graisse = 0
-        robotJS.keyTap("tab")
-        robotJS.typeStringDelayed(`${graisse}`, 2000)
+          // font -size
+          setValueOfInputString({
+            inputPositionRelativeOfPanel: {
+              x: 65,
+              y: 137,
+            },
+            panelWindow: caracterPanel,
+            stringToEnter: "22pt",
+          })
 
-        // contrast
-        if (contraste < 0 || contraste > 100) contraste = 0
-        robotJS.keyTap("tab")
-        robotJS.typeStringDelayed(`${contraste}`, 2000)
+          // line-height
+          setValueOfInputString({
+            inputPositionRelativeOfPanel: {
+              x: 195,
+              y: 137,
+            },
+            panelWindow: caracterPanel,
+            stringToEnter: "25pt",
+          })
 
-        // rigidité
-        if (rigidite < 0 || rigidite > 100) rigidite = 0
-        robotJS.keyTap("tab")
-        robotJS.typeStringDelayed(`${rigidite}`, 2000)
+          //=====
+          // font variable value
+          //=====
+          clickAtPositionRelativeToAWindow({
+            panelWindow: caracterPanel,
+            inputPositionRelativeOfPanel: {
+              x: 228,
+              y: 104,
+            }
+          })
 
-        robotJS.keyTap("enter")
-      }
+          // épaisseur
+          if (graisse < 0 || graisse > 100) graisse = 0
+          robotJS.keyTap("tab")
+          robotJS.typeStringDelayed(`${graisse}`, 2000)
 
-      // set position of text
-      const positionPanelWindow = openTransformationPanel()
+          // contrast
+          if (contraste < 0 || contraste > 100) contraste = 0
+          robotJS.keyTap("tab")
+          robotJS.typeStringDelayed(`${contraste}`, 2000)
 
-      printInfo("positionPanelWindow: ", positionPanelWindow)
+          // rigidité
+          if (rigidite < 0 || rigidite > 100) rigidite = 0
+          robotJS.keyTap("tab")
+          robotJS.typeStringDelayed(`${rigidite}`, 2000)
 
-      if (positionPanelWindow) {
+          robotJS.keyTap("enter")
+        }
 
-        // set x position
-        setValueOfInputString({
-          inputPositionRelativeOfPanel: {
-            x: 75,
-            y: 50,
-          },
-          panelWindow: positionPanelWindow,
-          stringToEnter: `${xPositionInDocument}cm`,
-        })
+        // set position of text
+        const positionPanelWindow = openTransformationPanel()
 
-        // set y position
-        setValueOfInputString({
-          inputPositionRelativeOfPanel: {
-            x: 75,
-            y: 75,
-          },
-          panelWindow: positionPanelWindow,
-          stringToEnter: "0cm",
-        })
+        printInfo("positionPanelWindow: ", positionPanelWindow)
 
-      }
+        if (positionPanelWindow) {
 
-      // unselect all
-      robotJS.keyTap("a", ["command", "shift"])
+          // set x position
+          setValueOfInputString({
+            inputPositionRelativeOfPanel: {
+              x: 75,
+              y: 50,
+            },
+            panelWindow: positionPanelWindow,
+            stringToEnter: `${xPositionInDocument}cm`,
+          })
 
-      resolve(true)
-    }, 100)
+          // set y position
+          setValueOfInputString({
+            inputPositionRelativeOfPanel: {
+              x: 75,
+              y: 75,
+            },
+            panelWindow: positionPanelWindow,
+            stringToEnter: "0cm",
+          })
+
+        }
+
+        // unselect all
+        robotJS.keyTap("a", ["command", "shift"])
+
+        resolve(true)
+      }, 100)
+
+    })
 
   })
 
