@@ -4,9 +4,10 @@ import {getActiveWindowInfo} from "../windowManager/main"
 import printInfo from "../_tools/printInfo"
 import {CUTTING_MASTER_CUTTING_PLUGIN_WINDOW_NAME, DEFAULT_MOUSE_DELAY} from "./main"
 
+// todo param
 // const TIME_TO_WAIT_FOR_CUTTING_MASTER = 8_000 // <-- crash
-const TIME_TO_WAIT_FOR_CUTTING_MASTER = 20_000 // <-- ok
-// const TIME_TO_WAIT_FOR_CUTTING_MASTER = 60_000 // <-- secure
+// const TIME_TO_WAIT_FOR_CUTTING_MASTER = 20_000 // <-- ok
+const TIME_TO_WAIT_FOR_CUTTING_MASTER = 60_000 // <-- secure
 
 const TIME_TO_WAIT_FOR_CLOSE_PLUGIN = 5_000
 

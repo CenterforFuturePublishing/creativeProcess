@@ -50,9 +50,10 @@ var robotJS = __importStar(require("robotjs"));
 var main_1 = require("../windowManager/main");
 var printInfo_1 = __importDefault(require("../_tools/printInfo"));
 var main_2 = require("./main");
+// todo param
 // const TIME_TO_WAIT_FOR_CUTTING_MASTER = 8_000 // <-- crash
-var TIME_TO_WAIT_FOR_CUTTING_MASTER = 20000; // <-- ok
-// const TIME_TO_WAIT_FOR_CUTTING_MASTER = 60_000 // <-- secure
+// const TIME_TO_WAIT_FOR_CUTTING_MASTER = 20_000 // <-- ok
+var TIME_TO_WAIT_FOR_CUTTING_MASTER = 60000; // <-- secure
 var TIME_TO_WAIT_FOR_CLOSE_PLUGIN = 5000;
 function default_1() {
     return __awaiter(this, void 0, void 0, function () {
