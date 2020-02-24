@@ -1548,3 +1548,227 @@ connection at :  16  :  12  :  46
   rigidite: 20
 }
 
+-------------------------------------
+------- copié le 24 février----------
+-------------------------------------
+
+connection at :  13  :  56  :  27
+{ poem: ' bbn-!r   bg  ', graisse: 70, contraste: 80, rigidite: 30 }
+connection at :  14  :  0  :  28
+{
+  poem: 'Fâchant au ventre des brosées du soleil,\n' +
+    "Et les perles d'un mes achernemens !\n" +
+    'Que sans iraumé de tous les coupents de vos mère.,\n' +
+    "Dans la cheve à l'excès. la grande crinté.\n" +
+    '\n' +
+    'Chère sur vos pieds de laisse en uxourels ;\n' +
+    'Rien bleu qui se dit le cœur : je sors\n' +
+    "Mais l'on peut mourrir ? La meilirai ;\n" +
+    'Parcer à mes gien, un je ne sais ?\n' +
+    '\n' +
+    'Autace aux serres de ces croirs d unxur,..,\n' +
+    'Et la salcaire jabeut le coeur de la grand\n' +
+    "Lui sourire le pas, un prochait de l'ennus.\n" +
+    '\n' +
+    "Vantait on de l'aurore, ni en travail.\n" +
+    "Fuse toi, dans l'azuse Marie,, et\n" +
+    'Farce tout balenuage. De la grêle profonds.',
+  graisse: 30,
+  contraste: 80,
+  rigidite: 40
+}
+connection at :  16  :  41  :  56
+{
+  poem: 'De la et tous qui floral et qui messire\n' +
+    'Et que la soleil est sous ses doigts divins ;\n' +
+    'Et les roses des champis baisers de la sucrière.\n' +
+    'Les frissons sont pour les vers sous ses !\n' +
+    '\n' +
+    'Et le de la corolle ; et les grimpées ;\n' +
+    'Les sors de la rose et les passante\n' +
+    'De ces soupirs de sur et de toi se défie\n' +
+    'Et de tous les coeurs mon âme est en riant.\n' +
+    '\n' +
+    'E vous les parfums de la sourire et la i.\n' +
+    "Mais les soirs de l'amour l ' a fait la juin ;\n" +
+    "L'aurore s'de l'Entrecôte à ce sourire de la trisse !\n" +
+    '\n' +
+    "En plein au pestaient de l'coup et de la mot\n" +
+    "De leur longs le coeur de l'ciel.\n" +
+    "O vous qui pouvons de ma ! Que n'astuce pas ?",
+  graisse: 40,
+  contraste: 30,
+  rigidite: 40
+}
+connection at :  16  :  42  :  39
+{
+  poem: 'Tout ce qui fait luire et tout à vos souffre\n' +
+    "C'est le rose de l'amour qui s'en va par delà.\n" +
+    'Le coeur de ses pieds la voix est bonne\n' +
+    "Le coeur s'est vu peut-être il est plus pur.",
+  graisse: 40,
+  contraste: 40,
+  rigidite: 0
+}
+connection at :  16  :  43  :  56
+{
+  poem: 'Et la jouir est comme un suivante\n' +
+    "Qui bien de l'clair et de continu\n" +
+    'Qui se promènent dans les cieux ;\n' +
+    "La lumière de la nuit s'élève et s'craque\n" +
+    'La erreurs est profonde et de la ?',
+  graisse: 10,
+  contraste: 40,
+  rigidite: 80
+}
+connection at :  11  :  45  :  30
+{
+  poem: 'Avec les plus beaux atours de la flamme\n' +
+    'Que le parfum de son emprise\n' +
+    'Se dissout dans le sourire de son mystère !',
+  graisse: 100,
+  contraste: 90,
+  rigidite: 30
+}
+connection at :  12  :  13  :  3
+{
+  poem: "Et de la ointe et de l'amour tout le monture\n" +
+    'Le beau front de la mer et le bien de la main\n' +
+    "Qu'il se peut dire : Il est beau ! Chacun s'en sue !\n" +
+    "A l'mortier de ce qu'il automne se dire, et que de ?",
+  graisse: 10,
+  contraste: 90,
+  rigidite: 0
+}
+connection at :  14  :  53  :  46
+{
+  poem: "Et les jeune de l'amour. Ah !\n" +
+    'Que de sanglots doux et doux !\n' +
+    "Comme un charme du aînée de l'soit et du xénon ;\n" +
+    'Le super est si donc, si t ?',
+  graisse: 90,
+  contraste: 90,
+  rigidite: 0
+}
+connection at :  15  :  58  :  53
+{
+  poem: "Ce vestale hesitant qui m'enivre d encens\n" +
+    "ses copeaux d atomes en l'air\n" +
+    "Au point où l'homme a des paleurs\n" +
+    "Le fleuve est perdu ; l'homme et\n" +
+    "Les fleurs au jugement de l'antique Sang ?",
+  graisse: 10,
+  contraste: 100,
+  rigidite: 0
+}
+connection at :  15  :  35  :  52
+{
+  poem: 'Le pardon est la porte\n' +
+    'L esprit des fonds te supporte\n' +
+    'L aile croit au-dessus des cohortes',
+  graisse: 90,
+  contraste: 80,
+  rigidite: 30
+}
+connection at :  15  :  43  :  12
+{
+  poem: 'Le vent courait sur mes pieds comme un chien\n' +
+    'Mes sandales, ouvertes de joie\n' +
+    'Offraient leur gueule à la brise caline\n' +
+    'Et ses mil baisers cabotins',
+  graisse: 10,
+  contraste: 0,
+  rigidite: 0
+}
+connection at :  14  :  2  :  29
+{
+  poem: "De la trois et de l'juteux Je\n" +
+    'Le une de mon plaisir en est la couve\n' +
+    "Car j'ai sur de vous apprendre ma vouer\n" +
+    "Mansion s'est s'en va dans votre t distant ?\n" +
+    '\n' +
+    'Rameur de mes le se reine, ma vives\n' +
+    "De mes dévoue j'ai la la terre et le salie\n" +
+    "De l'horreur de la rafe ; et l'autre\n" +
+    'Et le sent de la coeur, et la rembarre !\n' +
+    '\n' +
+    "Es n'échappe vermine de la peinte et son leur sombre,\n" +
+    "Le révélés de ce s'enjambai d'ma troupes et de sang\n" +
+    'Dans un sera de à théo qui font de !\n' +
+    '\n' +
+    'Es apache, qui sont les pleurs son\n' +
+    "De la contrée à l'ombre de la terrasson\n" +
+    "Et de ses visages d'un ont des catégorique !",
+  graisse: 80,
+  contraste: 50,
+  rigidite: 70
+}
+connection at :  16  :  43  :  9
+{
+  poem: '\nO désir !\nJe ne me souviens plus.\nJe vis sans plein!',
+  graisse: 100,
+  contraste: 0,
+  rigidite: 0
+}
+connection at :  16  :  47  :  40
+{
+  poem: 'Et le sage du matin qui se fleurie et qui se fâche\n' +
+    'Et que je ne lissant quel dit de l crois et de souris ;\n' +
+    'Et le vieux est certain pour les vers de la vitre,\n' +
+    "Car les vieux repos et les nous de l'imminente !",
+  graisse: 60,
+  contraste: 20,
+  rigidite: 40
+}
+connection at :  16  :  48  :  0
+{
+  poem: 'Et les plus sont se las\n' +
+    'Dans les doux de la terre et son\n' +
+    'Avec les reposées de la minbar.\n' +
+    '\n' +
+    "Es parfums de l'bourg si pelliculaire '\n" +
+    "Qui pour moi tu me souris. L'sombre est ne fleur ;\n" +
+    "Le bon amour se être et s'papi ?",
+  graisse: 60,
+  contraste: 30,
+  rigidite: 10
+}
+connection at :  10  :  34  :  46
+{
+  poem: 'La ta larmoie abonde\n' +
+    "L'mon franchit les bras de la vie, et le parfum ;\n" +
+    "L'heure des douleurs parfums des chevauche.",
+  graisse: 40,
+  contraste: 20,
+  rigidite: 20
+}
+connection at :  10  :  54  :  10
+{
+  poem: "Les paroles de l'crainte se recueillent des des\n" +
+    "Les doux de l'autre au ne va ; et moi tout\n" +
+    'Que la ravage est comme un sourire ; et le virait\n' +
+    "L'autre se penche dans l ' ô muet, le taverne et le passant.",
+  graisse: 30,
+  contraste: 0,
+  rigidite: 0
+}
+connection at :  11  :  4  :  37
+{
+  poem: "Des petits et des des. Le passant s'est mise.\n" +
+    "Cette soleil de l'autre souffle d'une devant,\n" +
+    'Où la monte se repose et se retire en son voyage\n' +
+    'Le muse est le reste ; le plus sonore et sa mai !',
+  graisse: 30,
+  contraste: 0,
+  rigidite: 0
+}
+connection at :  11  :  4  :  55
+{
+  poem: 'Que mon rayon et mes yeux sont poseur de moi.\n' +
+    'Ah ! Je vous le loin suprême ; je le se dire\n' +
+    "Et l'autre est mon coeur qui peut se dévoiler\n" +
+    "Et ce n'est pas le mener, l'aimer de la sourire ?",
+  graisse: 30,
+  contraste: 0,
+  rigidite: 0
+}
