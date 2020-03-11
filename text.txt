@@ -1772,3 +1772,1033 @@ connection at :  11  :  4  :  55
   contraste: 0,
   rigidite: 0
 }
+
+
+
+
+======
+======
+in progress
+======
+======
+
+    path: '/Applications/Adobe Illustrator 2020/Adobe Illustrator.app'
+  },
+  size: { x: 0, y: 23, width: 1280, height: 976 },
+  title: 'DL-MODEL.ai* @ 103,47% (CMJN/Aperçu GPU) '
+}
+2 / 2 | 10 : 46 : 20 document printing with success!
+success start to end post request
+connection at :  2  /  2  |  10  :  49  :  19
+{
+  poem: 'De la vie au fond des remords\n' +
+    'Les déconneurs de son mari se reposent de la mort.\n' +
+    'Et le monde est dans la souffrance et le remord, le soir.\n' +
+    'Le matin reste-t-il sur un au revoir ?',
+  graisse: 50,
+  contraste: 40,
+  rigidite: 0
+}
+2 / 2 | 10 : 49 : 19 open /Users/digitallyric/Desktop/robot-app/creativeProcess/server/resources/DL-MODEL.ai -a /Applications/Adobe\ Illustrator\ 2020/Adobe\ Illustrator.app
+arrayOfStandbyPoemData:  []
+2 / 2 | 10 : 49 : 20 illustrator is open:  true
+2 / 2 | 10 : 49 : 20 cutting master plugin windows find:  []
+De la vie au fond des remords
+couuuuuuscousss
+Les déconneurs de son mari se reposent de la mort.
+couuuuuuscousss
+Et le monde est dans la souffrance et le remord, le soir.
+couuuuuuscousss
+Le matin reste-t-il sur un au revoir ?
+couuuuuuscousss
+tapArrayOfTextWithEnterBreak end
+typeStringWithLineBreak end
+2 / 2 | 10 : 49 : 29 caracterPanel:  Window {
+  id: 475,
+  processId: 13341,
+  path: '/Applications/Adobe Illustrator 2020/Adobe Illustrator.app'
+}
+2 / 2 | 10 : 49 : 43 positionPanelWindow:  Window {
+  id: 475,
+  processId: 13341,
+  path: '/Applications/Adobe Illustrator 2020/Adobe Illustrator.app'
+}
+2 / 2 | 10 : 49 : 53 must be 'fichier' Fichier
+getActiveWindowInfo()
+{
+  window: Window {
+    id: 132,
+    processId: 13341,
+    path: '/Applications/Adobe Illustrator 2020/Adobe Illustrator.app'
+  },
+  size: { x: 0, y: 23, width: 1280, height: 976 },
+  title: 'DL-MODEL.ai* @ 103,47% (CMJN/Aperçu GPU) '
+}
+2 / 2 | 10 : 51 : 9 document printing with success!
+success start to end post request
+connection at :  2  /  2  |  12  :  24  :  26
+{
+  poem: 'Je le crois qui les a placé !\n' +
+    "Le ne charmés dans l'air sous le\n" +
+    "Pour l'air au sec de l'amour.\n" +
+    '\n' +
+    "Tant les moines de l'je reste d'qui\n" +
+    "Les prédicateurs de l'chaut en son même ; les rêves,\n" +
+    'Et les pourquoi de la roue.',
+  graisse: 70,
+  contraste: 80,
+  rigidite: 30
+}
+2 / 2 | 12 : 24 : 26 open /Users/digitallyric/Desktop/robot-app/creativeProcess/server/resources/DL-MODEL.ai -a /Applications/Adobe\ Illustrator\ 2020/Adobe\ Illustrator.app
+arrayOfStandbyPoemData:  []
+2 / 2 | 12 : 24 : 27 illustrator is open:  true
+2 / 2 | 12 : 24 : 27 cutting master plugin windows find:  []
+Je le crois qui les a placé !
+couuuuuuscousss
+Le ne charmés dans l'air sous le
+couuuuuuscousss
+Pour l'air au sec de l'amour.
+couuuuuuscousss
+
+couuuuuuscousss
+Tant les moines de l'je reste d'qui
+couuuuuuscousss
+Les prédicateurs de l'chaut en son même ; les rêves,
+couuuuuuscousss
+Et les pourquoi de la roue.
+couuuuuuscousss
+tapArrayOfTextWithEnterBreak end
+typeStringWithLineBreak end
+2 / 2 | 12 : 24 : 37 caracterPanel:  Window {
+  id: 491,
+  processId: 13341,
+  path: '/Applications/Adobe Illustrator 2020/Adobe Illustrator.app'
+}
+2 / 2 | 12 : 24 : 52 positionPanelWindow:  null
+2 / 2 | 12 : 24 : 54 must be 'fichier' Fichier
+getActiveWindowInfo()
+{
+  window: Window {
+    id: 132,
+    processId: 13341,
+    path: '/Applications/Adobe Illustrator 2020/Adobe Illustrator.app'
+  },
+  size: { x: 0, y: 23, width: 1280, height: 976 },
+  title: 'DL-MODEL.ai* @ 103,47% (CMJN/Aperçu GPU) '
+}
+2 / 2 | 12 : 26 : 11 document printing with success!
+success start to end post request
+connection at :  2  /  2  |  12  :  32  :  1
+{
+  poem: "Qui se éveilles et s'en voeux,\n" +
+    'Au passoire de ce passé le ou marche se\n' +
+    'En traversant le soleil sur !\n' +
+    '\n' +
+    'Avant des temps fauves et minus\n' +
+    'Le soleil transparent des trous béants\n' +
+    "Un paysan d'or comme un enfant !",
+  graisse: 100,
+  contraste: 60,
+  rigidite: 0
+}
+2 / 2 | 12 : 32 : 1 open /Users/digitallyric/Desktop/robot-app/creativeProcess/server/resources/DL-MODEL.ai -a /Applications/Adobe\ Illustrator\ 2020/Adobe\ Illustrator.app
+arrayOfStandbyPoemData:  []
+2 / 2 | 12 : 32 : 2 illustrator is open:  true
+2 / 2 | 12 : 32 : 2 cutting master plugin windows find:  []
+Qui se éveilles et s'en voeux,
+couuuuuuscousss
+Au passoire de ce passé le ou marche se
+couuuuuuscousss
+En traversant le soleil sur !
+couuuuuuscousss
+
+couuuuuuscousss
+Avant des temps fauves et minus
+couuuuuuscousss
+Le soleil transparent des trous béants
+couuuuuuscousss
+Un paysan d'or comme un enfant !
+couuuuuuscousss
+tapArrayOfTextWithEnterBreak end
+typeStringWithLineBreak end
+2 / 2 | 12 : 32 : 12 caracterPanel:  Window {
+  id: 507,
+  processId: 13341,
+  path: '/Applications/Adobe Illustrator 2020/Adobe Illustrator.app'
+}
+2 / 2 | 12 : 32 : 26 positionPanelWindow:  Window {
+  id: 507,
+  processId: 13341,
+  path: '/Applications/Adobe Illustrator 2020/Adobe Illustrator.app'
+}
+2 / 2 | 12 : 32 : 36 must be 'fichier' Fichier
+getActiveWindowInfo()
+{
+  window: Window {
+    id: 132,
+    processId: 13341,
+    path: '/Applications/Adobe Illustrator 2020/Adobe Illustrator.app'
+  },
+  size: { x: 0, y: 23, width: 1280, height: 976 },
+  title: 'DL-MODEL.ai* @ 103,47% (CMJN/Aperçu GPU) '
+}
+2 / 2 | 12 : 33 : 52 document printing with success!
+success start to end post request
+connection at :  2  /  2  |  15  :  12  :  14
+{
+  poem: "Le matin l'odeur des monts ternis de la vie\n" +
+    'Les champs de sa souriant de la vie, pageais\n' +
+    "Sur le infini d'un bout d'argent de l'ardente,\n" +
+    "S'en va par les sourires du profond et beau !\n" +
+    '\n' +
+    'Es que sur les cieux du ciel par\n' +
+    "Les champs de l'nom qui se paresse\n" +
+    "Les humbles de grande c'est la chanoine\n" +
+    "Le Mièvre de l'autre l'objets ne m'était plus.\n" +
+    '\n' +
+    'Jeannette de ce ronde de sent ! -\n' +
+    'Je vous le te loue au même : je vous Et\n' +
+    "Pour moi te que ? Contemple de l'on met.\n" +
+    '\n' +
+    'Essentiel donc qui retentit le ou eut\n' +
+    "De ce qu'il met les fleurs. - Et que\n" +
+    'Par toi, par vous de tes pieds, ô mon vole !',
+  graisse: 10,
+  contraste: 50,
+  rigidite: 0
+}
+2 / 2 | 15 : 12 : 14 open /Users/digitallyric/Desktop/robot-app/creativeProcess/server/resources/DL-MODEL.ai -a /Applications/Adobe\ Illustrator\ 2020/Adobe\ Illustrator.app
+arrayOfStandbyPoemData:  []
+2 / 2 | 15 : 12 : 15 illustrator is open:  true
+2 / 2 | 15 : 12 : 15 cutting master plugin windows find:  []
+Le matin l'odeur des monts ternis de la vie
+couuuuuuscousss
+Les champs de sa souriant de la vie, pageais
+couuuuuuscousss
+Sur le infini d'un bout d'argent de l'ardente,
+couuuuuuscousss
+S'en va par les sourires du profond et beau !
+couuuuuuscousss
+
+couuuuuuscousss
+Es que sur les cieux du ciel par
+couuuuuuscousss
+Les champs de l'nom qui se paresse
+couuuuuuscousss
+Les humbles de grande c'est la chanoine
+couuuuuuscousss
+Le Mièvre de l'autre l'objets ne m'était plus.
+couuuuuuscousss
+
+couuuuuuscousss
+Jeannette de ce ronde de sent ! -
+couuuuuuscousss
+Je vous le te loue au même : je vous Et
+couuuuuuscousss
+Pour moi te que ? Contemple de l'on met.
+couuuuuuscousss
+
+couuuuuuscousss
+Essentiel donc qui retentit le ou eut
+couuuuuuscousss
+De ce qu'il met les fleurs. - Et que
+couuuuuuscousss
+Par toi, par vous de tes pieds, ô mon vole !
+couuuuuuscousss
+tapArrayOfTextWithEnterBreak end
+typeStringWithLineBreak end
+2 / 2 | 15 : 12 : 31 caracterPanel:  Window {
+  id: 523,
+  processId: 13341,
+  path: '/Applications/Adobe Illustrator 2020/Adobe Illustrator.app'
+}
+2 / 2 | 15 : 12 : 46 positionPanelWindow:  null
+2 / 2 | 15 : 12 : 48 must be 'fichier' Fichier
+getActiveWindowInfo()
+{
+  window: Window {
+    id: 132,
+    processId: 13341,
+    path: '/Applications/Adobe Illustrator 2020/Adobe Illustrator.app'
+  },
+  size: { x: 0, y: 23, width: 1280, height: 976 },
+  title: 'DL-MODEL.ai* @ 103,47% (CMJN/Aperçu GPU) '
+}
+2 / 2 | 15 : 14 : 4 document printing with success!
+success start to end post request
+connection at :  2  /  2  |  15  :  16  :  36
+{
+  poem: 'Et des chants des fleurs de la les\n' +
+    "Et des chants de l'du profond s'mouronne.\n" +
+    'Les bons et les amis, les roules, les dérapes\n' +
+    'Et les désirs sont trop faibles.\n' +
+    '\n' +
+    'Évertue de la constance, et comme un\n' +
+    "Une que qui s'en va par le ce calmant du lueur ;\n" +
+    "Le doux de l'autre est le plus sûr\n" +
+    'Des feuillages en en peu qui se rend des commets.\n' +
+    '\n' +
+    'Tant les soupirs de la Slush, et le monte\n' +
+    "Et le canne de l'autre cesse l'amorce\n" +
+    'Et des coeurs et des chants de la seul ?\n' +
+    '\n' +
+    'Es fleurs de la mouche et les au doux de son ;\n' +
+    'Et tout à coup il sait les plus beaux pas\n' +
+    "Les cadences de Satan c'est la pensée où brille !",
+  graisse: 10,
+  contraste: 60,
+  rigidite: 0
+}
+2 / 2 | 15 : 16 : 36 open /Users/digitallyric/Desktop/robot-app/creativeProcess/server/resources/DL-MODEL.ai -a /Applications/Adobe\ Illustrator\ 2020/Adobe\ Illustrator.app
+arrayOfStandbyPoemData:  []
+2 / 2 | 15 : 16 : 37 illustrator is open:  true
+2 / 2 | 15 : 16 : 37 cutting master plugin windows find:  []
+Et des chants des fleurs de la les
+couuuuuuscousss
+Et des chants de l'du profond s'mouronne.
+couuuuuuscousss
+Les bons et les amis, les roules, les dérapes
+couuuuuuscousss
+Et les désirs sont trop faibles.
+couuuuuuscousss
+
+couuuuuuscousss
+Évertue de la constance, et comme un
+couuuuuuscousss
+Une que qui s'en va par le ce calmant du lueur ;
+couuuuuuscousss
+Le doux de l'autre est le plus sûr
+couuuuuuscousss
+Des feuillages en en peu qui se rend des commets.
+couuuuuuscousss
+
+couuuuuuscousss
+Tant les soupirs de la Slush, et le monte
+couuuuuuscousss
+Et le canne de l'autre cesse l'amorce
+couuuuuuscousss
+Et des coeurs et des chants de la seul ?
+couuuuuuscousss
+
+couuuuuuscousss
+Es fleurs de la mouche et les au doux de son ;
+couuuuuuscousss
+Et tout à coup il sait les plus beaux pas
+couuuuuuscousss
+Les cadences de Satan c'est la pensée où brille !
+couuuuuuscousss
+tapArrayOfTextWithEnterBreak end
+typeStringWithLineBreak end
+2 / 2 | 15 : 16 : 53 caracterPanel:  Window {
+  id: 539,
+  processId: 13341,
+  path: '/Applications/Adobe Illustrator 2020/Adobe Illustrator.app'
+}
+2 / 2 | 15 : 17 : 7 positionPanelWindow:  Window {
+  id: 539,
+  processId: 13341,
+  path: '/Applications/Adobe Illustrator 2020/Adobe Illustrator.app'
+}
+2 / 2 | 15 : 17 : 17 must be 'fichier' Fichier
+connection at :  2  /  2  |  15  :  17  :  57
+{
+  poem: 'Cher et mes pas de long\n' +
+    'Pour les saluts de ma son suaire.\n' +
+    'La vers de la son des ?\n' +
+    '\n' +
+    'Es toujours de son haleine ; au\n' +
+    "Sous les démets la plus et d'fois comme le ciel\n" +
+    "Et le poète est trop d'ardeur, son.",
+  graisse: 30,
+  contraste: 0,
+  rigidite: 0
+}
+getActiveWindowInfo()
+{
+  window: Window {
+    id: 132,
+    processId: 13341,
+    path: '/Applications/Adobe Illustrator 2020/Adobe Illustrator.app'
+  },
+  size: { x: 0, y: 23, width: 1280, height: 976 },
+  title: 'DL-MODEL.ai* @ 103,47% (CMJN/Aperçu GPU) '
+}
+2 / 2 | 15 : 18 : 33 document printing with success!
+success start to end post request
+2 / 2 | 15 : 18 : 33 open /Users/digitallyric/Desktop/robot-app/creativeProcess/server/resources/DL-MODEL.ai -a /Applications/Adobe\ Illustrator\ 2020/Adobe\ Illustrator.app
+arrayOfStandbyPoemData:  []
+connection at :  2  /  2  |  15  :  18  :  33
+{
+  poem: 'Y Verte son court somnambulant.\n' +
+    'Pour un peu de refonde il te marches\n' +
+    "Mais si ma voix d'amour s 'd battre ?\n" +
+    '\n' +
+    'Près de mon rouge et mon coterie\n' +
+    'Se déroule en ce longeais de mon âme ; et\n' +
+    "Pour ce qu'il faut qu'il me semble ?",
+  graisse: 30,
+  contraste: 0,
+  rigidite: 0
+}
+2 / 2 | 15 : 18 : 33 open /Users/digitallyric/Desktop/robot-app/creativeProcess/server/resources/DL-MODEL.ai -a /Applications/Adobe\ Illustrator\ 2020/Adobe\ Illustrator.app
+arrayOfStandbyPoemData:  []
+2 / 2 | 15 : 18 : 35 illustrator is open:  true
+2 / 2 | 15 : 18 : 35 cutting master plugin windows find:  []
+Y Verte son court somnambulant.
+couuuuuuscousss
+2 / 2 | 15 : 18 : 39 illustrator is open:  true
+2 / 2 | 15 : 18 : 39 cutting master plugin windows find:  []
+Cher et mes pas de long
+couuuuuuscousss
+Pour un peu de refonde il te marches
+couuuuuuscousss
+Pour les saluts de ma son suaire.
+couuuuuuscousss
+Mais si ma voix d'amour s 'd battre ?
+couuuuuuscousss
+La vers de la son des ?
+couuuuuuscousss
+
+couuuuuuscousss
+
+couuuuuuscousss
+Près de mon rouge et mon coterie
+couuuuuuscousss
+Es toujours de son haleine ; au
+couuuuuuscousss
+Se déroule en ce longeais de mon âme ; et
+couuuuuuscousss
+Sous les démets la plus et d'fois comme le ciel
+couuuuuuscousss
+Pour ce qu'il faut qu'il me semble ?
+couuuuuuscousss
+Et le poète est trop d'ardeur, son.
+couuuuuuscousss
+tapArrayOfTextWithEnterBreak end
+typeStringWithLineBreak end
+tapArrayOfTextWithEnterBreak end
+typeStringWithLineBreak end
+2 / 2 | 15 : 18 : 51 caracterPanel:  Window {
+  id: 555,
+  processId: 13341,
+  path: '/Applications/Adobe Illustrator 2020/Adobe Illustrator.app'
+}
+2 / 2 | 15 : 19 : 5 positionPanelWindow:  Window {
+  id: 555,
+  processId: 13341,
+  path: '/Applications/Adobe Illustrator 2020/Adobe Illustrator.app'
+}
+2 / 2 | 15 : 19 : 15 must be 'fichier' Fichier
+2 / 2 | 15 : 19 : 21 caracterPanel:  null
+2 / 2 | 15 : 19 : 22 positionPanelWindow:  null
+2 / 2 | 15 : 19 : 24 must be 'fichier' Découper/Tracer
+2 / 2 | 15 : 19 : 24 ================
+/!\/!\/!\/!\/!\
+ERROR: lunchCutingMasterFromIllustrator(), can't open 'Fichier' menu
+2 / 2 | 15 : 19 : 27 ERROR:
+document can't be printing… =(
+success start to end post request
+2 / 2 | 15 : 20 : 18 ERROR:  {
+  window: Window {
+    id: 572,
+    processId: 14264,
+    path: '/Applications/Cutting Master 4 64/MacOSX/Program/Cutting plug-in.app'
+  },
+  size: { x: 535, y: 574, width: 120, height: 100 },
+  title: ''
+}
+cutting master is open but activeWindow has not correct title
+2 / 2 | 15 : 20 : 18 ERROR:
+document can't be printing… =(
+success start to end post request
+connection at :  3  /  2  |  10  :  8  :  58
+{
+  poem: "Et d'amour le monde est pour\n" +
+    "De vous l'avoir pour toutes la égales\n" +
+    "Et ce qui l ' jour tailleuse.\n" +
+    '\n' +
+    'Es la rose aux yeux de la faute\n' +
+    "Et les longs d'oiseaux d'or et les infamant\n" +
+    "Pour l'avoir dit que les les !",
+  graisse: 80,
+  contraste: 0,
+  rigidite: 0
+}
+3 / 2 | 10 : 8 : 58 open /Users/digitallyric/Desktop/robot-app/creativeProcess/server/resources/DL-MODEL.ai -a /Applications/Adobe\ Illustrator\ 2020/Adobe\ Illustrator.app
+arrayOfStandbyPoemData:  []
+3 / 2 | 10 : 8 : 59 illustrator is open:  true
+3 / 2 | 10 : 8 : 59 cutting master plugin windows find:  [
+  Window {
+    id: 571,
+    processId: 14264,
+    path: '/Applications/Cutting Master 4 64/MacOSX/Program/Cutting plug-in.app'
+  }
+]
+Et d'amour le monde est pour
+couuuuuuscousss
+De vous l'avoir pour toutes la égales
+couuuuuuscousss
+Et ce qui l ' jour tailleuse.
+couuuuuuscousss
+
+couuuuuuscousss
+Es la rose aux yeux de la faute
+couuuuuuscousss
+Et les longs d'oiseaux d'or et les infamant
+couuuuuuscousss
+Pour l'avoir dit que les les !
+couuuuuuscousss
+tapArrayOfTextWithEnterBreak end
+typeStringWithLineBreak end
+3 / 2 | 10 : 9 : 10 caracterPanel:  Window {
+  id: 574,
+  processId: 13341,
+  path: '/Applications/Adobe Illustrator 2020/Adobe Illustrator.app'
+}
+3 / 2 | 10 : 9 : 25 positionPanelWindow:  Window {
+  id: 580,
+  processId: 13341,
+  path: '/Applications/Adobe Illustrator 2020/Adobe Illustrator.app'
+}
+3 / 2 | 10 : 9 : 34 must be 'fichier' Fichier
+connection at :  3  /  2  |  10  :  9  :  37
+{
+  poem: "Le coeur de l'astre et le vent de l'pleurite\n" +
+    'Et le infini des loisirs et les parfums de la tente\n' +
+    "Et les fleurs des forêts s'allument sur les égales\n" +
+    'Et des palis de ces cornes de son.',
+  graisse: 30,
+  contraste: 0,
+  rigidite: 0
+}
+getActiveWindowInfo()
+{
+  window: Window {
+    id: 132,
+    processId: 13341,
+    path: '/Applications/Adobe Illustrator 2020/Adobe Illustrator.app'
+  },
+  size: { x: 0, y: 23, width: 1280, height: 976 },
+  title: 'DL-MODEL.ai* @ 103,47% (CMJN/Aperçu GPU) '
+}
+3 / 2 | 10 : 10 : 51 document printing with success!
+success start to end post request
+3 / 2 | 10 : 10 : 51 open /Users/digitallyric/Desktop/robot-app/creativeProcess/server/resources/DL-MODEL.ai -a /Applications/Adobe\ Illustrator\ 2020/Adobe\ Illustrator.app
+arrayOfStandbyPoemData:  []
+3 / 2 | 10 : 10 : 52 illustrator is open:  true
+3 / 2 | 10 : 10 : 52 cutting master plugin windows find:  []
+Le coeur de l'astre et le vent de l'pleurite
+couuuuuuscousss
+Et le infini des loisirs et les parfums de la tente
+couuuuuuscousss
+Et les fleurs des forêts s'allument sur les égales
+couuuuuuscousss
+Et des palis de ces cornes de son.
+couuuuuuscousss
+tapArrayOfTextWithEnterBreak end
+typeStringWithLineBreak end
+3 / 2 | 10 : 11 : 0 caracterPanel:  Window {
+  id: 593,
+  processId: 13341,
+  path: '/Applications/Adobe Illustrator 2020/Adobe Illustrator.app'
+}
+3 / 2 | 10 : 11 : 14 positionPanelWindow:  Window {
+  id: 593,
+  processId: 13341,
+  path: '/Applications/Adobe Illustrator 2020/Adobe Illustrator.app'
+}
+3 / 2 | 10 : 11 : 24 must be 'fichier' Fichier
+getActiveWindowInfo()
+{
+  window: Window {
+    id: 132,
+    processId: 13341,
+    path: '/Applications/Adobe Illustrator 2020/Adobe Illustrator.app'
+  },
+  size: { x: 0, y: 23, width: 1280, height: 976 },
+  title: 'DL-MODEL.ai* @ 103,47% (CMJN/Aperçu GPU) '
+}
+3 / 2 | 10 : 12 : 40 document printing with success!
+success start to end post request
+connection at :  3  /  2  |  10  :  28  :  47
+{
+  poem: 'Tous les sonnes de la contemple est Voire ;\n' +
+    'Et les étouffons de la nuit cette mobilité\n' +
+    'Et de son coups sans rais qui\n' +
+    "A l'air d'un instant qui se passe de l'joue.\n" +
+    '\n' +
+    "'embarrassant le chiale, comme dans\n" +
+    'Les désirs de sa montre se prolongeant.\n' +
+    'Le boit est le suis des cieux, la\n' +
+    "Qui d'si nations le rouge en passant ; et.\n" +
+    '\n' +
+    'E rex les soient et les chaudes choses\n' +
+    "Les champs des champs qu'on ne ne le désirer.\n" +
+    'Pour moi, du trotte le bas de tes pieds ?\n' +
+    '\n' +
+    "Éprit au haine de l'abîme et de la nuit\n" +
+    'Son Une de la nue est pareille ;\n' +
+    "Et de leurs parents, mais plus d'usage.",
+  graisse: 30,
+  contraste: 30,
+  rigidite: 30
+}
+3 / 2 | 10 : 28 : 47 open /Users/digitallyric/Desktop/robot-app/creativeProcess/server/resources/DL-MODEL.ai -a /Applications/Adobe\ Illustrator\ 2020/Adobe\ Illustrator.app
+arrayOfStandbyPoemData:  []
+3 / 2 | 10 : 28 : 48 illustrator is open:  true
+3 / 2 | 10 : 28 : 48 cutting master plugin windows find:  []
+Tous les sonnes de la contemple est Voire ;
+couuuuuuscousss
+Et les étouffons de la nuit cette mobilité
+couuuuuuscousss
+Et de son coups sans rais qui
+couuuuuuscousss
+A l'air d'un instant qui se passe de l'joue.
+couuuuuuscousss
+connection at :  3  /  2  |  10  :  28  :  54
+{
+  poem: "Le plus haut de l'laxiste qu'on\n" +
+    'Toute chercher est un peu de pain et\n' +
+    'Au moins comme un trentaine.\n' +
+    '\n' +
+    'Es mon de son coeur sous\n' +
+    'De les pas de la sonde et de la sans\n' +
+    'Le laisse la joie, le soir, le soir ?',
+  graisse: 90,
+  contraste: 100,
+  rigidite: 0
+}
+
+couuuuuuscousss
+'embarrassant le chiale, comme dans
+couuuuuuscousss
+Les désirs de sa montre se prolongeant.
+couuuuuuscousss
+Le boit est le suis des cieux, la
+couuuuuuscousss
+Qui d'si nations le rouge en passant ; et.
+couuuuuuscousss
+
+couuuuuuscousss
+E rex les soient et les chaudes choses
+couuuuuuscousss
+Les champs des champs qu'on ne ne le désirer.
+couuuuuuscousss
+Pour moi, du trotte le bas de tes pieds ?
+couuuuuuscousss
+
+couuuuuuscousss
+Éprit au haine de l'abîme et de la nuit
+couuuuuuscousss
+Son Une de la nue est pareille ;
+couuuuuuscousss
+Et de leurs parents, mais plus d'usage.
+couuuuuuscousss
+tapArrayOfTextWithEnterBreak end
+typeStringWithLineBreak end
+3 / 2 | 10 : 29 : 4 caracterPanel:  Window {
+  id: 609,
+  processId: 13341,
+  path: '/Applications/Adobe Illustrator 2020/Adobe Illustrator.app'
+}
+3 / 2 | 10 : 29 : 19 positionPanelWindow:  null
+3 / 2 | 10 : 29 : 21 must be 'fichier' Fichier
+connection at :  3  /  2  |  10  :  29  :  24
+{
+  poem: "La d'épaissi de son la mine et le doux d'autrui\n" +
+    'Et le sentiras se coureuses dans le ciel blessé ;\n' +
+    "Les membres de Jésus c'est le nom de la terre\n" +
+    "C'est l'air de son beau corps l ?",
+  graisse: 100,
+  contraste: 0,
+  rigidite: 90
+}
+getActiveWindowInfo()
+{
+  window: Window {
+    id: 132,
+    processId: 13341,
+    path: '/Applications/Adobe Illustrator 2020/Adobe Illustrator.app'
+  },
+  size: { x: 0, y: 23, width: 1280, height: 976 },
+  title: 'DL-MODEL.ai* @ 103,47% (CMJN/Aperçu GPU) '
+}
+3 / 2 | 10 : 30 : 38 document printing with success!
+success start to end post request
+3 / 2 | 10 : 30 : 38 open /Users/digitallyric/Desktop/robot-app/creativeProcess/server/resources/DL-MODEL.ai -a /Applications/Adobe\ Illustrator\ 2020/Adobe\ Illustrator.app
+arrayOfStandbyPoemData:  [
+  {
+    poem: "La d'épaissi de son la mine et le doux d'autrui\n" +
+      'Et le sentiras se coureuses dans le ciel blessé ;\n' +
+      "Les membres de Jésus c'est le nom de la terre\n" +
+      "C'est l'air de son beau corps l ?",
+    graisse: 100,
+    contraste: 0,
+    rigidite: 90
+  }
+]
+3 / 2 | 10 : 30 : 39 illustrator is open:  true
+3 / 2 | 10 : 30 : 39 cutting master plugin windows find:  []
+Le plus haut de l'laxiste qu'on
+couuuuuuscousss
+Toute chercher est un peu de pain et
+couuuuuuscousss
+Au moins comme un trentaine.
+couuuuuuscousss
+
+couuuuuuscousss
+Es mon de son coeur sous
+couuuuuuscousss
+De les pas de la sonde et de la sans
+couuuuuuscousss
+Le laisse la joie, le soir, le soir ?
+couuuuuuscousss
+tapArrayOfTextWithEnterBreak end
+typeStringWithLineBreak end
+3 / 2 | 10 : 30 : 49 caracterPanel:  Window {
+  id: 625,
+  processId: 13341,
+  path: '/Applications/Adobe Illustrator 2020/Adobe Illustrator.app'
+}
+3 / 2 | 10 : 31 : 4 positionPanelWindow:  null
+3 / 2 | 10 : 31 : 6 must be 'fichier' Fichier
+getActiveWindowInfo()
+{
+  window: Window {
+    id: 132,
+    processId: 13341,
+    path: '/Applications/Adobe Illustrator 2020/Adobe Illustrator.app'
+  },
+  size: { x: 0, y: 23, width: 1280, height: 976 },
+  title: 'DL-MODEL.ai* @ 103,47% (CMJN/Aperçu GPU) '
+}
+3 / 2 | 10 : 32 : 22 document printing with success!
+success start to end post request
+3 / 2 | 10 : 32 : 22 open /Users/digitallyric/Desktop/robot-app/creativeProcess/server/resources/DL-MODEL.ai -a /Applications/Adobe\ Illustrator\ 2020/Adobe\ Illustrator.app
+arrayOfStandbyPoemData:  []
+3 / 2 | 10 : 32 : 23 illustrator is open:  true
+3 / 2 | 10 : 32 : 23 cutting master plugin windows find:  []
+La d'épaissi de son la mine et le doux d'autrui
+couuuuuuscousss
+Et le sentiras se coureuses dans le ciel blessé ;
+couuuuuuscousss
+Les membres de Jésus c'est le nom de la terre
+couuuuuuscousss
+C'est l'air de son beau corps l ?
+couuuuuuscousss
+tapArrayOfTextWithEnterBreak end
+typeStringWithLineBreak end
+3 / 2 | 10 : 32 : 31 caracterPanel:  Window {
+  id: 641,
+  processId: 13341,
+  path: '/Applications/Adobe Illustrator 2020/Adobe Illustrator.app'
+}
+3 / 2 | 10 : 32 : 46 positionPanelWindow:  null
+3 / 2 | 10 : 32 : 48 must be 'fichier' Fichier
+getActiveWindowInfo()
+{
+  window: Window {
+    id: 132,
+    processId: 13341,
+    path: '/Applications/Adobe Illustrator 2020/Adobe Illustrator.app'
+  },
+  size: { x: 0, y: 23, width: 1280, height: 976 },
+  title: 'DL-MODEL.ai* @ 103,47% (CMJN/Aperçu GPU) '
+}
+3 / 2 | 10 : 34 : 5 document printing with success!
+success start to end post request
+connection at :  3  /  2  |  10  :  39  :  21
+{
+  poem: 'Comme un regard de chant\n' +
+    'Sous le de gerfaut de la paix de la pierre\n' +
+    'Et de la main de mon âme !\n' +
+    '\n' +
+    "Arde d'autres encor plus d'rode\n" +
+    "Qui dans l'du nocher remplisse en ce éjacule ; et si\n" +
+    "Qu'il me parle de moi ! Pour moi ?",
+  graisse: 30,
+  contraste: 100,
+  rigidite: 0
+}
+3 / 2 | 10 : 39 : 21 open /Users/digitallyric/Desktop/robot-app/creativeProcess/server/resources/DL-MODEL.ai -a /Applications/Adobe\ Illustrator\ 2020/Adobe\ Illustrator.app
+arrayOfStandbyPoemData:  []
+3 / 2 | 10 : 39 : 22 illustrator is open:  true
+3 / 2 | 10 : 39 : 22 cutting master plugin windows find:  []
+Comme un regard de chant
+couuuuuuscousss
+Sous le de gerfaut de la paix de la pierre
+couuuuuuscousss
+Et de la main de mon âme !
+couuuuuuscousss
+
+couuuuuuscousss
+Arde d'autres encor plus d'rode
+couuuuuuscousss
+Qui dans l'du nocher remplisse en ce éjacule ; et si
+couuuuuuscousss
+Qu'il me parle de moi ! Pour moi ?
+couuuuuuscousss
+tapArrayOfTextWithEnterBreak end
+typeStringWithLineBreak end
+3 / 2 | 10 : 39 : 32 caracterPanel:  Window {
+  id: 656,
+  processId: 13341,
+  path: '/Applications/Adobe Illustrator 2020/Adobe Illustrator.app'
+}
+3 / 2 | 10 : 39 : 47 positionPanelWindow:  null
+3 / 2 | 10 : 39 : 49 must be 'fichier' Fichier
+connection at :  3  /  2  |  10  :  39  :  52
+{
+  poem: "L'et de sa main ; le race premier\n" +
+    'A chose de la terre et du roi des affaisser !\n' +
+    "A l'heure où le soleil se incitait au plus sage.\n" +
+    'Le plus sage sous le ciel bleu ; la ?\n' +
+    '\n' +
+    'On par le soleil, ce écoeure et cette en haute\n' +
+    "Ce qu'il a perdu le me freine de la retenu,\n" +
+    "Et le flot d'un bon de désordres partner saisi\n" +
+    'Et le perroquet sur son réveille sur le cieux.\n' +
+    '\n' +
+    "Es que d'd est de'l antique le fatale,\n" +
+    'Et le frisson est plus souvent que la forêt.\n' +
+    'Le marchand est plein de charmant, et déjà ?\n' +
+    '\n' +
+    "Es - d'rit sous le soleil de la nuit\n" +
+    'Le suit de la anti-manoir et le mal\n' +
+    "Le soleil des un main dont le sitôt l ' ?",
+  graisse: 30,
+  contraste: 0,
+  rigidite: 40
+}
+connection at :  3  /  2  |  10  :  39  :  52
+{
+  poem: "Et, près de l'amour et du pain les mousse de voiles,\n" +
+    'Ce qui peut fouiller les du grouse de la terre,\n' +
+    'Et le sous coeur de la main est pure, au printemps\n' +
+    'Le chute est presque il baiser, et pour le rêve.',
+  graisse: 30,
+  contraste: 100,
+  rigidite: 0
+}
+getActiveWindowInfo()
+{
+  window: Window {
+    id: 132,
+    processId: 13341,
+    path: '/Applications/Adobe Illustrator 2020/Adobe Illustrator.app'
+  },
+  size: { x: 0, y: 23, width: 1280, height: 976 },
+  title: 'DL-MODEL.ai* @ 103,47% (CMJN/Aperçu GPU) '
+}
+3 / 2 | 10 : 41 : 6 document printing with success!
+success start to end post request
+3 / 2 | 10 : 41 : 6 open /Users/digitallyric/Desktop/robot-app/creativeProcess/server/resources/DL-MODEL.ai -a /Applications/Adobe\ Illustrator\ 2020/Adobe\ Illustrator.app
+arrayOfStandbyPoemData:  [
+  {
+    poem: "Et, près de l'amour et du pain les mousse de voiles,\n" +
+      'Ce qui peut fouiller les du grouse de la terre,\n' +
+      'Et le sous coeur de la main est pure, au printemps\n' +
+      'Le chute est presque il baiser, et pour le rêve.',
+    graisse: 30,
+    contraste: 100,
+    rigidite: 0
+  }
+]
+3 / 2 | 10 : 41 : 7 illustrator is open:  true
+3 / 2 | 10 : 41 : 7 cutting master plugin windows find:  []
+L'et de sa main ; le race premier
+couuuuuuscousss
+A chose de la terre et du roi des affaisser !
+couuuuuuscousss
+A l'heure où le soleil se incitait au plus sage.
+couuuuuuscousss
+Le plus sage sous le ciel bleu ; la ?
+couuuuuuscousss
+
+couuuuuuscousss
+On par le soleil, ce écoeure et cette en haute
+couuuuuuscousss
+Ce qu'il a perdu le me freine de la retenu,
+couuuuuuscousss
+Et le flot d'un bon de désordres partner saisi
+couuuuuuscousss
+Et le perroquet sur son réveille sur le cieux.
+couuuuuuscousss
+
+couuuuuuscousss
+Es que d'd est de'l antique le fatale,
+couuuuuuscousss
+Et le frisson est plus souvent que la forêt.
+couuuuuuscousss
+Le marchand est plein de charmant, et déjà ?
+couuuuuuscousss
+
+couuuuuuscousss
+Es - d'rit sous le soleil de la nuit
+couuuuuuscousss
+Le suit de la anti-manoir et le mal
+couuuuuuscousss
+Le soleil des un main dont le sitôt l ' ?
+couuuuuuscousss
+tapArrayOfTextWithEnterBreak end
+typeStringWithLineBreak end
+3 / 2 | 10 : 41 : 23 caracterPanel:  Window {
+  id: 671,
+  processId: 13341,
+  path: '/Applications/Adobe Illustrator 2020/Adobe Illustrator.app'
+}
+3 / 2 | 10 : 41 : 38 positionPanelWindow:  Window {
+  id: 671,
+  processId: 13341,
+  path: '/Applications/Adobe Illustrator 2020/Adobe Illustrator.app'
+}
+3 / 2 | 10 : 41 : 48 must be 'fichier' Fichier
+getActiveWindowInfo()
+{
+  window: Window {
+    id: 132,
+    processId: 13341,
+    path: '/Applications/Adobe Illustrator 2020/Adobe Illustrator.app'
+  },
+  size: { x: 0, y: 23, width: 1280, height: 976 },
+  title: 'DL-MODEL.ai* @ 103,47% (CMJN/Aperçu GPU) '
+}
+3 / 2 | 10 : 43 : 4 document printing with success!
+success start to end post request
+3 / 2 | 10 : 43 : 4 open /Users/digitallyric/Desktop/robot-app/creativeProcess/server/resources/DL-MODEL.ai -a /Applications/Adobe\ Illustrator\ 2020/Adobe\ Illustrator.app
+arrayOfStandbyPoemData:  []
+3 / 2 | 10 : 43 : 5 illustrator is open:  true
+3 / 2 | 10 : 43 : 5 cutting master plugin windows find:  []
+Et, près de l'amour et du pain les mousse de voiles,
+couuuuuuscousss
+Ce qui peut fouiller les du grouse de la terre,
+couuuuuuscousss
+Et le sous coeur de la main est pure, au printemps
+couuuuuuscousss
+Le chute est presque il baiser, et pour le rêve.
+couuuuuuscousss
+tapArrayOfTextWithEnterBreak end
+typeStringWithLineBreak end
+3 / 2 | 10 : 43 : 13 caracterPanel:  Window {
+  id: 687,
+  processId: 13341,
+  path: '/Applications/Adobe Illustrator 2020/Adobe Illustrator.app'
+}
+3 / 2 | 10 : 43 : 28 positionPanelWindow:  null
+3 / 2 | 10 : 43 : 30 must be 'fichier' Fichier
+getActiveWindowInfo()
+{
+  window: Window {
+    id: 132,
+    processId: 13341,
+    path: '/Applications/Adobe Illustrator 2020/Adobe Illustrator.app'
+  },
+  size: { x: 0, y: 23, width: 1280, height: 976 },
+  title: 'DL-MODEL.ai* @ 103,47% (CMJN/Aperçu GPU) '
+}
+3 / 2 | 10 : 44 : 47 document printing with success!
+success start to end post request
+connection at :  3  /  2  |  12  :  32  :  15
+{
+  poem: "Les la de Jésus c'est le plus ses du.\n" +
+    'Le peuple est tout au premier bond ; le destin\n' +
+    'Avec le coeur de la vie et le tour de la vie\n' +
+    "Quand, fait toujours, je ne si donc pas, je n'ai parlé.",
+  graisse: 40,
+  contraste: 60,
+  rigidite: 30
+}
+3 / 2 | 12 : 32 : 15 open /Users/digitallyric/Desktop/robot-app/creativeProcess/server/resources/DL-MODEL.ai -a /Applications/Adobe\ Illustrator\ 2020/Adobe\ Illustrator.app
+arrayOfStandbyPoemData:  []
+3 / 2 | 12 : 32 : 16 illustrator is open:  true
+3 / 2 | 12 : 32 : 16 cutting master plugin windows find:  []
+Les la de Jésus c'est le plus ses du.
+couuuuuuscousss
+Le peuple est tout au premier bond ; le destin
+couuuuuuscousss
+Avec le coeur de la vie et le tour de la vie
+couuuuuuscousss
+Quand, fait toujours, je ne si donc pas, je n'ai parlé.
+couuuuuuscousss
+tapArrayOfTextWithEnterBreak end
+typeStringWithLineBreak end
+3 / 2 | 12 : 32 : 24 caracterPanel:  Window {
+  id: 703,
+  processId: 13341,
+  path: '/Applications/Adobe Illustrator 2020/Adobe Illustrator.app'
+}
+3 / 2 | 12 : 32 : 39 positionPanelWindow:  null
+3 / 2 | 12 : 32 : 41 must be 'fichier' Fichier
+getActiveWindowInfo()
+{
+  window: Window {
+    id: 132,
+    processId: 13341,
+    path: '/Applications/Adobe Illustrator 2020/Adobe Illustrator.app'
+  },
+  size: { x: 0, y: 23, width: 1280, height: 976 },
+  title: 'DL-MODEL.ai* @ 103,47% (CMJN/Aperçu GPU) '
+}
+3 / 2 | 12 : 33 : 58 document printing with success!
+success start to end post request
+connection at :  3  /  2  |  13  :  19  :  36
+{
+  poem: 'Et les femmes sont les cheveux\n' +
+    'Couples des cieux délicats\n' +
+    'Dans la splendeur du regard\n' +
+    '\n' +
+    'Savantes et fantasques\n' +
+    'Dans le soleil de la terre, et son oeuvre\n' +
+    'Est plus lumineuse ce matin.',
+  graisse: 10,
+  contraste: 90,
+  rigidite: 0
+}
+3 / 2 | 13 : 19 : 36 open /Users/digitallyric/Desktop/robot-app/creativeProcess/server/resources/DL-MODEL.ai -a /Applications/Adobe\ Illustrator\ 2020/Adobe\ Illustrator.app
+arrayOfStandbyPoemData:  []
+3 / 2 | 13 : 19 : 37 illustrator is open:  true
+3 / 2 | 13 : 19 : 37 cutting master plugin windows find:  []
+Et les femmes sont les cheveux
+couuuuuuscousss
+Couples des cieux délicats
+couuuuuuscousss
+Dans la splendeur du regard
+couuuuuuscousss
+
+couuuuuuscousss
+Savantes et fantasques
+couuuuuuscousss
+Dans le soleil de la terre, et son oeuvre
+couuuuuuscousss
+Est plus lumineuse ce matin.
+couuuuuuscousss
+tapArrayOfTextWithEnterBreak end
+typeStringWithLineBreak end
+3 / 2 | 13 : 19 : 47 caracterPanel:  Window {
+  id: 719,
+  processId: 13341,
+  path: '/Applications/Adobe Illustrator 2020/Adobe Illustrator.app'
+}
+3 / 2 | 13 : 20 : 2 positionPanelWindow:  null
+3 / 2 | 13 : 20 : 4 must be 'fichier' Fichier
+3 / 2 | 13 : 21 : 7 ERROR:  {
+  window: Window {
+    id: 66,
+    processId: 12597,
+    path: '/Applications/Visual Studio Code.app'
+  },
+  size: { x: 31, y: 23, width: 1280, height: 976 },
+  title: 'main.js — creativeProcess'
+}
+cutting master is open but activeWindow has not correct title
+3 / 2 | 13 : 21 : 7 ERROR:
+document can't be printing… =(
+success start to end post request
+^C
+digitallyric@cffp server %
+
+=====
+=====
+in progress END must be printin
+=====
+=====
