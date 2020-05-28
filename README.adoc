@@ -44,3 +44,14 @@ In terminal,
 - faire que le mac mini s'allume automatiqueent a 8h du mat
 
 - supprimer le mot de passe pour la session (et non mettre un mot de passe vide)
+
+=== illustrator
+
+- penser à bien mettre le coin de transfromation en haut à gauche
+- penser a activer la fermeture auto des fenetres
+
+= lancer l'installation
+
+lancer /server
+
+les post test sont postTest/
