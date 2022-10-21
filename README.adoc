@@ -49,6 +49,8 @@ In terminal,
 
 - penser à bien mettre le coin de transfromation en haut à gauche
 - penser a activer la fermeture auto des fenetres
+- activer les options dans les panel caractere et transformation
+- activer l'outil de retouche de text
 
 = lancer l'installation
 
